@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proença's Moda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1 class="store-name">Proença's Moda</h1>
+        <p class="tagline">Descubra seu novo estilo com elegância e sofisticação.</p>
+    </header>
+
+    <main>
+        <section id="category-selection" class="category-section active-section">
+            <h2 class="section-title">Nossas Coleções</h2>
+            <div class="category-grid">
+                <div class="category-card" data-category="feminino">
+                    <img src="./img/feminino/vestido-tais (1).jpg" alt="Moda Feminina" class="category-image">
+                    <div class="category-info">
+                        <h3>Feminino</h3>
+                        <p>Explore as últimas tendências</p>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <section id="product-catalog" class="product-section">
+            <button id="back-to-categories" class="back-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Voltar às Coleções
+            </button>
+            <h2 class="section-title" id="catalog-title">Nossos Modelos</h2>
+            <div class="product-grid" id="product-grid-container">
+                </div>
+        </section>
+    </main>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image-gallery">
+                    <div class="modal-main-image-container">
+                        <img id="modalMainImage" src="./img/feminino/vestido-tais (1).jpg" alt="Imagem Principal do Produto">
+                    </div>
+                    <div class="modal-thumbnails" id="modalThumbnails">
+                        </div>
+                </div>
+                <div class="modal-product-details">
+                    <h3 id="modalProductName">Nome do Produto</h3>
+                    <p id="modalProductDescription">Descrição detalhada do produto aqui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
