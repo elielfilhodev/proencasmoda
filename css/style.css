@@ -200,6 +200,15 @@ body {
     flex-direction: column;
     opacity: 0; /* Para animação de entrada */
 }
+.product-card:hover {
+    background-color: rgba(204, 132, 31, 0.445); /* Cor de fundo ao passar o mouse */
+    color: var(--light-text-color);
+    box-shadow: 0 12px 30px rgba(208, 109, 28, 0.15);
+    transform: translateY(-10px) scale(1.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    color: var(--light-text-color);
+    text-decoration: none; /* Remove sublinhado ao passar o mouse */
+}
 
 .product-card.fade-in { /* Classe para animação de entrada */
     animation: fadeInCard 0.5s ease-out forwards;
