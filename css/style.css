@@ -1,6 +1,6 @@
 /* css/style.css */
 :root {
-    --primary-color: #be8e4f; /* Azul escuro acinzentado */
+    --primary-color: #2c3e50; /* Azul escuro acinzentado */
     --secondary-color: #f8f9fa; /* Cinza muito claro, quase branco */
     --accent-color: #e74c3c; /* Vermelho/Laranja vibrante para destaques */
     --text-color: #34495e; /* Cinza escuro para texto */
@@ -27,6 +27,13 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    display: flex; /* Para ajudar a posicionar o rodapé */
+    flex-direction: column; /* Para ajudar a posicionar o rodapé */
+    min-height: 100vh; /* Para garantir que o rodapé fique no final em páginas curtas */
+}
+
+main {
+    flex-grow: 1; /* Faz o conteúdo principal ocupar o espaço disponível */
 }
 
 /* Cabeçalho Principal */
@@ -132,7 +139,7 @@ body {
     right: 0;
     padding: 25px;
     text-align: center;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 1.2) 0%, rgba(0, 0, 0, 0) 100%);
     color: var(--light-text-color);
     transition: background var(--transition-speed) ease;
 }
@@ -199,15 +206,6 @@ body {
     display: flex;
     flex-direction: column;
     opacity: 0; /* Para animação de entrada */
-}
-.product-card:hover {
-    background-color: rgba(204, 132, 31, 0.445); /* Cor de fundo ao passar o mouse */
-    color: var(--light-text-color);
-    box-shadow: 0 12px 30px rgba(208, 109, 28, 0.15);
-    transform: translateY(-10px) scale(1.02);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    color: var(--light-text-color);
-    text-decoration: none; /* Remove sublinhado ao passar o mouse */
 }
 
 .product-card.fade-in { /* Classe para animação de entrada */
@@ -397,6 +395,34 @@ body {
     margin-bottom: 25px;
 }
 
+/* Rodapé */
+.main-footer-credits {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: auto; /* Empurra o rodapé para o final da página */
+    font-size: 0.9rem;
+}
+
+.copyright-text {
+    margin-bottom: 8px;
+    opacity: 0.8;
+}
+
+.developer-credit a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color var(--transition-speed) ease;
+}
+
+.developer-credit a:hover {
+    color: var(--light-text-color);
+    text-decoration: underline;
+}
+
+
 /* Responsividade */
 @media (max-width: 992px) { /* Tablets e Desktops menores */
     .modal-body {
@@ -443,6 +469,9 @@ body {
         width: 75px;
         height: 90px;
     }
+    .main-footer-credits {
+        padding: 25px 15px;
+    }
 }
 
 @media (max-width: 480px) { /* Celulares */
@@ -463,5 +492,8 @@ body {
     }
     #modalProductDescription {
         font-size: 0.9rem;
+    }
+    .main-footer-credits {
+        font-size: 0.85rem;
     }
 }
