@@ -301,6 +301,60 @@ document.addEventListener('DOMContentLoaded', () => {
                 ],
                 thumbnail: './img/feminino/vestidotulemidi.jpg'
             },
+            {
+                id: 'fem023',
+                name: 'Saia Plissada Midi Metálica Rosé',
+                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
+                images: [
+                    './img/feminino/vestidocamilabordado.jpg',
+
+                ],
+                thumbnail: './img/feminino/vestidocamilabordado.jpg'
+            },
+            {
+                id: 'fem024',
+                name: 'Saia Plissada Midi Metálica Rosé',
+                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
+                images: [
+                    './img/feminino/vestidoelisa.jpg',
+                    './img/feminino/vestidoelisa2.jpg',
+                    './img/feminino/vestidoelisa3.jpg',
+                ],
+                thumbnail: './img/feminino/vestidoelisa.jpg'
+            },
+            {
+                id: 'fem025',
+                name: 'Saia Plissada Midi Metálica Rosé',
+                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
+                images: [
+                    './img/feminino/vestidonanda.jpg',
+                    './img/feminino/vestidonanda2.jpg',
+                    './img/feminino/vestidonanda3.jpg',
+                    './img/feminino/vestidonanda4.jpg',
+                    './img/feminino/vestidonanda5.jpg',
+                    './img/feminino/vestidonanda6.jpg',
+                    './img/feminino/vestidonanda7.jpg',
+                    './img/feminino/vestidonanda8.jpg'
+                ],
+                thumbnail: './img/feminino/vestidonanda.jpg'
+            },
+            {
+                id: 'fem026',
+                name: 'Saia Plissada Midi Metálica Rosé',
+                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
+                images: [
+                    './img/feminino/vestidoplissadolaco.jpg',
+                    './img/feminino/vestidoplissadolaco2.jpg',
+                    './img/feminino/vestidoplissadolaco3.jpg',
+                    './img/feminino/vestidoplissadolaco4.jpg',
+                    './img/feminino/vestidoplissadolaco5.jpg',
+                    './img/feminino/vestidoplissadolaco6.jpg',
+                    './img/feminino/vestidoplissadolaco7.jpg',
+                    './img/feminino/vestidoplissadolaco8.jpg',
+                    './img/feminino/vestidoplissadolaco9.jpg'
+                ],
+                thumbnail: './img/feminino/vestidotulemidi.jpg'
+            },
         ],
         masculino: [
             {
