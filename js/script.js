@@ -353,7 +353,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestidoplissadolaco8.jpg',
                     './img/feminino/vestidoplissadolaco9.jpg'
                 ],
-                thumbnail: './img/feminino/vestidotulemidi.jpg'
+                thumbnail: './img/feminino/vestidoplissadolaco.jpg'
             },
         ],
         masculino: [
