@@ -24,6 +24,83 @@ document.addEventListener('DOMContentLoaded', () => {
     const productsData = {
         feminino: [
             {
+                id: 'fem040',
+                name: 'Vestido Prisila',
+                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                images: [
+                    './img/feminino/vestidoprisila.jpg',
+                    './img/feminino/vestidoprisila2.jpg',
+                    './img/feminino/vestidoprisila3.jpg',
+                    './img/feminino/vestidoprisila4.jpg',
+
+                ],
+                thumbnail: './img/feminino/vestidoprisila.jpg' // Imagem para o card no catálogo
+            },
+            {
+                id: 'fem039',
+                name: 'Vestido Midi Sereia',
+                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                images: [
+                    './img/feminino/vestidomidisereia.jpg',
+                    './img/feminino/vestidomidisereia2.jpg',
+                    './img/feminino/vestidomidisereia3.jpg',
+                    './img/feminino/vestidomidisereia4.jpg',
+                    './img/feminino/vestidomidisereia5.jpg',
+                    './img/feminino/vestidomidisereia6.jpg',
+                    './img/feminino/vestidomidisereia7.jpg',
+                    './img/feminino/vestidomidisereia8.jpg',
+                    './img/feminino/vestidomidisereia9.jpg',
+
+                ],
+                thumbnail: './img/feminino/vestidomidisereia.jpg' // Imagem para o card no catálogo
+            },
+            {
+                id: 'fem038',
+                name: 'Vestido Lívia',
+                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                images: [
+                    './img/feminino/vestidolivia.jpg',
+                    './img/feminino/vestidolivia2.jpg',
+                    './img/feminino/vestidolivia3.jpg',
+                    './img/feminino/vestidolivia4.jpg',
+                    './img/feminino/vestidolivia5.jpg',
+                    './img/feminino/vestidolivia6.jpg',
+                    './img/feminino/vestidolivia7.jpg',
+                    './img/feminino/vestidolivia8.jpg',
+                    './img/feminino/vestidolivia9.jpg',
+
+                ],
+                thumbnail: './img/feminino/vestidolivia.jpg' // Imagem para o card no catálogo
+            },
+            {
+                id: 'fem037',
+                name: 'Vestido Linho Duna Duas Mangas',
+                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                images: [
+                    './img/feminino/linhodunaduasmangas.jpg',
+                    './img/feminino/linhodunaduasmangas2.jpg',
+                    './img/feminino/linhodunaduasmangas3.jpg',
+                    './img/feminino/linhodunaduasmangas4.jpg',
+                    './img/feminino/linhodunaduasmangas5.jpg',
+                    './img/feminino/linhodunaduasmangas6.jpg',
+
+                ],
+                thumbnail: './img/feminino/linhodunaduasmangas.jpg' // Imagem para o card no catálogo
+            },
+            {
+                id: 'fem036',
+                name: 'Vestido Lais',
+                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                images: [
+                    './img/feminino/vestidolais2.jpg',
+                    './img/feminino/vestidolais.jpg',
+                    './img/feminino/vestidolais3.jpg',
+                    './img/feminino/vestidolais5.jpg',
+
+                ],
+                thumbnail: './img/feminino/vestidolais2.jpg' // Imagem para o card no catálogo
+            },
+            {
                 id: 'fem035',
                 name: 'Vestido Milene',
                 description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
@@ -47,8 +124,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: 'Vestido Maya Linho',
                 description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
                 images: [
-                    './img/feminino/vestidomayalinho.jpg',
+                    
                     './img/feminino/vestidomayalinho2.jpg',
+                    './img/feminino/vestidomayalinho.jpg',
                     './img/feminino/vestidomayalinho3.jpg',
                     './img/feminino/vestidomayalinho4.jpg',
                     './img/feminino/vestidomayalinho5.jpg',
@@ -57,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestidomayalinho8.jpg',
                     './img/feminino/vestidomayalinho9.jpg',
                 ],
-                thumbnail: './img/feminino/vestidomayalinho.jpg' // Imagem para o card no catálogo
+                thumbnail: './img/feminino/vestidomayalinho2.jpg' // Imagem para o card no catálogo
             },
             {
                 id: 'fem033',
@@ -75,14 +153,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: 'Vestido Kelly Linho',
                 description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
                 images: [
+                    './img/feminino/vestidokellylinho5.jpg',
                     './img/feminino/vestidokellylinho.jpg',
                     './img/feminino/vestidokellylinho2.jpg',
                     './img/feminino/vestidokellylinho3.jpg',
                     './img/feminino/vestidokellylinho4.jpg',
-                    './img/feminino/vestidokellylinho5.jpg',
+                    ,
                     './img/feminino/vestidokellylinho6.jpg',
                 ],
-                thumbnail: './img/feminino/vestidokellylinho.jpg' // Imagem para o card no catálogo
+                thumbnail: './img/feminino/vestidokellylinho5.jpg' // Imagem para o card no catálogo
             },
             {
                 id: 'fem031',
@@ -95,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem030',
-                name: 'Vestido Vestido Floral',
+                name: 'Vestido Floral',
                 description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
                 images: [
                     './img/feminino/vestidofloral.jpg',
@@ -266,17 +345,17 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem011',
-                name: 'Tati Linho Duna',
+                name: 'Vestido Tati Linho Duna',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
-                    './img/feminino/tatilinhoduna.jpg',
                     './img/feminino/tatilinhoduna2.jpg',
+                    './img/feminino/tatilinhoduna.jpg',
                     './img/feminino/tatilinhoduna3.jpg',
                     './img/feminino/tatilinhoduna4.jpg',
                     './img/feminino/tatilinhoduna5.jpg',
                     './img/feminino/tatilinhoduna6.jpg'
                 ],
-                thumbnail: './img/feminino/tatilinhoduna.jpg'
+                thumbnail: './img/feminino/tatilinhoduna2.jpg'
             },
             {
                 id: 'fem012',
@@ -321,11 +400,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: 'Vestido Curto com Alça',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
+                    './img/feminino/vestidocurtoalca3.jpg',
                     './img/feminino/vestidocurtoalca.jpg',
                     './img/feminino/vestidocurtoalca2.jpg',
-                    './img/feminino/vestidocurtoalca3.jpg',
+                    
                 ],
-                thumbnail: './img/feminino/vestidocurtoalca.jpg'
+                thumbnail: './img/feminino/vestidocurtoalca3.jpg'
             },
             {
                 id: 'fem016',
@@ -356,17 +436,18 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem018',
-                name: 'Vestdigo Gola Padre',
+                name: 'Vestido Gola Padre',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
+                    './img/feminino/vestidogolapadre6.jpg',
                     './img/feminino/vestidogolapadre.jpg',
                     './img/feminino/vestidogolapadre2.jpg',
                     './img/feminino/vestidogolapadre3.jpg',
                     './img/feminino/vestidogolapadre4.jpg',
                     './img/feminino/vestidogolapadre5.jpg',
-                    './img/feminino/vestidogolapadre6.jpg'
+                    
                 ],
-                thumbnail: './img/feminino/vestidogolapadre.jpg'
+                thumbnail: './img/feminino/vestidogolapadre6.jpg'
             },
             {
                 id: 'fem019',
