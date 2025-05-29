@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalThumbnailsContainer = document.getElementById('modalThumbnails');
     const modalProductName = document.getElementById('modalProductName');
     const modalProductDescription = document.getElementById('modalProductDescription');
+    const precoProduto = document.getElementById('precoProduto');
 
     let currentProducts = []; // Armazena os produtos da categoria atualmente visualizada
 
@@ -26,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 id: 'fem040',
                 name: 'Vestido Prisila',
-                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                description: 'Vestido Midi, tecido crepinho, veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
                     './img/feminino/vestidoprisila.jpg',
                     './img/feminino/vestidoprisila2.jpg',
@@ -34,12 +35,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestidoprisila4.jpg',
 
                 ],
-                thumbnail: './img/feminino/vestidoprisila.jpg' // Imagem para o card no catálogo
+                thumbnail: './img/feminino/vestidoprisila.jpg',
+                price: '129,90',
             },
             {
                 id: 'fem039',
                 name: 'Vestido Midi Sereia',
-                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                description: 'Tecido crepinho, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
                     './img/feminino/vestidomidisereia.jpg',
                     './img/feminino/vestidomidisereia2.jpg',
@@ -52,12 +54,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestidomidisereia9.jpg',
 
                 ],
-                thumbnail: './img/feminino/vestidomidisereia.jpg' // Imagem para o card no catálogo
+                thumbnail: './img/feminino/vestidomidisereia.jpg',
+                price: '119,90'
             },
             {
                 id: 'fem038',
                 name: 'Vestido Lívia',
-                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                description: 'Vestido Midi, tecido linho duna, com forro, veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/vestidolivia.jpg',
                     './img/feminino/vestidolivia2.jpg',
@@ -70,12 +73,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestidolivia9.jpg',
 
                 ],
-                thumbnail: './img/feminino/vestidolivia.jpg' // Imagem para o card no catálogo
+                thumbnail: './img/feminino/vestidolivia.jpg',
+                price: '129,90'
             },
             {
                 id: 'fem037',
                 name: 'Vestido Linho Duna Duas Mangas',
-                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                description: 'Vestido Linho Duna, duas manguinhas, tecido linho com forro e bolso, veste até o 44, consiltar cores disponíveis.',
                 images: [
                     './img/feminino/linhodunaduasmangas.jpg',
                     './img/feminino/linhodunaduasmangas2.jpg',
@@ -85,12 +89,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/linhodunaduasmangas6.jpg',
 
                 ],
-                thumbnail: './img/feminino/linhodunaduasmangas.jpg' // Imagem para o card no catálogo
+                thumbnail: './img/feminino/linhodunaduasmangas.jpg',
+                price: '149,90'
             },
             {
                 id: 'fem036',
                 name: 'Vestido Lais',
-                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                description: 'Tecido Viscolinho, com forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
                     './img/feminino/vestidolais2.jpg',
                     './img/feminino/vestidolais.jpg',
@@ -98,12 +103,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestidolais5.jpg',
 
                 ],
-                thumbnail: './img/feminino/vestidolais2.jpg' // Imagem para o card no catálogo
+                thumbnail: './img/feminino/vestidolais2.jpg',
+                price: '139,90'
             },
             {
                 id: 'fem035',
                 name: 'Vestido Milene',
-                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                description: 'Vestido Milene Midi, tecido crepinho com forro, tamanho ÚNICO veste até o 38,40,42,44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
                     './img/feminino/vestidomilene.jpg',
                     './img/feminino/vestidomilene2.jpg',
@@ -117,12 +123,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestidomilene10.jpg',
 
                 ],
-                thumbnail: './img/feminino/vestidomilene.jpg' // Imagem para o card no catálogo
+                thumbnail: './img/feminino/vestidomilene.jpg', 
+                price: '149,90'
             },
             {
                 id: 'fem034',
                 name: 'Vestido Maya Linho',
-                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                description: 'Tecido Duna linho, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
                     
                     './img/feminino/vestidomayalinho2.jpg',
@@ -135,23 +142,25 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestidomayalinho8.jpg',
                     './img/feminino/vestidomayalinho9.jpg',
                 ],
-                thumbnail: './img/feminino/vestidomayalinho2.jpg' // Imagem para o card no catálogo
+                thumbnail: './img/feminino/vestidomayalinho2.jpg',
+                price: '149,90'
             },
             {
                 id: 'fem033',
                 name: 'Vestido Laço Plissado',
-                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                description: 'Tecido crepinho importado, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
                     './img/feminino/vestidolacoplissado.jpg',
                     './img/feminino/vestidolacoplissado2.jpg',
                     './img/feminino/vestidolacoplissado3.jpg',
                 ],
-                thumbnail: './img/feminino/vestidolacoplissado.jpg' // Imagem para o card no catálogo
+                thumbnail: './img/feminino/vestidolacoplissado.jpg',
+                price: '139,90'
             },
             {
                 id: 'fem032',
                 name: 'Vestido Kelly Linho',
-                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                description: 'Tecido Linho duna, com forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
                     './img/feminino/vestidokellylinho5.jpg',
                     './img/feminino/vestidokellylinho.jpg',
@@ -161,21 +170,23 @@ document.addEventListener('DOMContentLoaded', () => {
                     ,
                     './img/feminino/vestidokellylinho6.jpg',
                 ],
-                thumbnail: './img/feminino/vestidokellylinho5.jpg' // Imagem para o card no catálogo
+                thumbnail: './img/feminino/vestidokellylinho5.jpg',
+                price: '159,90'
             },
             {
                 id: 'fem031',
                 name: 'Vestido Floral Curto',
                 description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
                 images: [
-                    './img/feminino/vestidofloralcurto.jpg', // Imagem principal (exemplo maior)
+                    './img/feminino/vestidofloralcurto.jpg',
                 ],
-                thumbnail: './img/feminino/vestidofloralcurto.jpg' // Imagem para o card no catálogo
+                thumbnail: './img/feminino/vestidofloralcurto.jpg',
+                price: '99,90'
             },
             {
                 id: 'fem030',
                 name: 'Vestido Floral',
-                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                description: 'Tecido crepinho com forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
                     './img/feminino/vestidofloral.jpg',
                     './img/feminino/vestidofloral2.jpg',
@@ -188,12 +199,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestidofloral9.jpg',
                     './img/feminino/vestidofloral10.jpg'
                 ],
-                thumbnail: './img/feminino/vestidofloral.jpg' // Imagem para o card no catálogo
+                thumbnail: './img/feminino/vestidofloral.jpg',
+                price: '119,90'
             },
             {
                 id: 'fem029',
                 name: 'Saia Courino',
-                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                description: 'Saia em courino, tamanho ÚNICO veste até o 46, consultar cores disponíveis.',
                 images: [
                     './img/feminino/saiacourino.jpg',
                     './img/feminino/saiacourino2.jpg',
@@ -201,24 +213,26 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/saiacourino4.jpg',
                     './img/feminino/saiacourino5.jpg',
                 ],
-                thumbnail: './img/feminino/saiacourino.jpg' // Imagem para o card no catálogo
+                thumbnail: './img/feminino/saiacourino.jpg',
+                price: '119,90'
             },
             {
                 id: 'fem028',
                 name: 'Cardigan de Lã',
-                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                description: 'Cardigan tecido em lã macia, tamanho ÚNICO veste até o 40,42,44, consultar cores disponíveis. Perfeito para aquecer e complementar looks de outono e inverno.',
                 images: [
                     './img/feminino/cardigandela',
                     './img/feminino/cardigandela2.jpg',
                     './img/feminino/cardigandela3.jpg',
                     './img/feminino/cardigandela4.jpg',
                 ],
-                thumbnail: './img/feminino/cardigandela.jpg' // Imagem para o card no catálogo
+                thumbnail: './img/feminino/cardigandela.jpg',
+                price: '69,90'
             },
                 {
                 id: 'fem027',
                 name: 'Vestido Bordado com Brilho',
-                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                description: 'Tecido Viscolinho, com forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
                     './img/feminino/vestidobordadobrilho.jpg',
                     './img/feminino/vestidobordadobrilho2.jpg',
@@ -226,14 +240,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestidobordadobrilho4.jpg',
                     './img/feminino/vestidobordadobrilho5.jpg',
                 ],
-                thumbnail: './img/feminino/vestidobordadobrilho.jpg' // Imagem para o card no catálogo
+                thumbnail: './img/feminino/vestidobordadobrilho.jpg',
+                price: '179,90'
             },
             {
                 id: 'fem001',
                 name: 'Vestido Tais',
-                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                description: 'Tecido crepinho forrado, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Midi, com mangas bufantes, gola quadrada e detalhe em renda na barra. Elegante feminino e ideal, para quem busca modestia e sofisticação.',
                 images: [
-                    './img/feminino/vestido-tais (1).jpg', // Imagem principal (exemplo maior)
+                    './img/feminino/vestido-tais (1).jpg',
                     './img/feminino/vestido-tais (2).jpg',
                     './img/feminino/vestido-tais (3).jpg',
                     './img/feminino/vestido-tais (4).jpg',
@@ -241,33 +256,36 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestido-tais (6).jpg',
                     './img/feminino/vestido-tais (7).jpg'
                 ],
-                thumbnail: './img/feminino/vestido-tais (1).jpg' // Imagem para o card no catálogo
+                thumbnail: './img/feminino/vestido-tais (1).jpg',
+                price: '129,90'
             },
             {
                 id: 'fem002',
                 name: 'Vestido Curto Plissado',
-                description: 'Blusa sofisticada confeccionada em seda pura, proporcionando um toque suave e luxuoso. Possui um elegante detalhe de laço no pescoço, ideal para compor looks de trabalho refinados ou para eventos formais.',
+                description: 'Tecido crepinho forrado, tamanho ÚNICO veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/vestidocurtoplissado.jpg',
                     './img/feminino/vestidocurtoplissado2.jpg',
                     './img/feminino/vestidocurtoplissado3.jpg'
                 ],
-                thumbnail: './img/feminino/vestidocurtoplissado.jpg'
+                thumbnail: './img/feminino/vestidocurtoplissado.jpg',
+                price: '99,90'
             },
             {
                 id: 'fem003',
                 name: 'Vestido Jéssica',
-                description: 'Calça jeans skinny com lavagem moderna e detalhes destroyed sutis, conferindo um visual contemporâneo. Tecido com alta elasticidade para máximo conforto e modelagem que valoriza o corpo.',
+                description: 'Linho Tamanho ÚNICO, veste até o 44, consultar cores disponíveis. Tecido Linho/Duna com forro e bolso',
                 images: [
-                    './img/feminino/vestidojessica.jpg', // Imagem principal (exemplo maior)
+                    './img/feminino/vestidojessica.jpg',
                     './img/feminino/vestidojessica2.jpg'
                 ],
-                thumbnail: './img/feminino/vestidojessica.jpg'
+                thumbnail: './img/feminino/vestidojessica.jpg',
+                price: '159,90'
             },
             {
                 id: 'fem004',
-                name: 'Vestido Lesi Midi',
-                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
+                name: 'Vestido Lese Midi',
+                description: 'Lese Midi, tamanho ÚNICO veste até o 44, tecido algodão/lese, com forro.',
                 images: [
                     './img/feminino/vestidolesimid.jpg', 
                     './img/feminino/vestidolesimid2.jpg',
@@ -276,28 +294,31 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestidolesi5.jpg',
                     './img/feminino/vestidolesi6.jpg'
                 ],
-                thumbnail: './img/feminino/vestidolesimid.jpg'
+                thumbnail: './img/feminino/vestidolesimid.jpg',
+                price: '179,90'
             },
             {
                 id: 'fem005',
                 name: 'Vestido Natalia Tule',
-                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
+                description: 'Tecido em Tule forrado, tamanho ÚNICO veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/vestidonataliatule.jpg', 
                     './img/feminino/vestidonataliatule2.jpg',
                 ],
-                thumbnail: './img/feminino/vestidonataliatule.jpg'
+                thumbnail: './img/feminino/vestidonataliatule.jpg',
+                price: '169,90'
             },
             {
                 id: 'fem006',
                 name: 'Conjunto Linho',
-                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
+                description: 'Tecido Linho com forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
                     './img/feminino/conjuntolinho.jpg', 
                     './img/feminino/conjuntolinho2.jpg',
                     './img/feminino/conjuntolinho3.jpg',
                 ],
-                thumbnail: './img/feminino/conjuntolinho.jpg'
+                thumbnail: './img/feminino/conjuntolinho.jpg',
+                price: '169,90'
             },
             {
                 id: 'fem007',
@@ -305,20 +326,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
                     './img/feminino/conjuntosensorial.jpg',
-
                 ],
-                thumbnail: './img/feminino/conjuntosensorial.jpg'
+                thumbnail: './img/feminino/conjuntosensorial.jpg',
+                price: 'indisponível'
             },
             {
                 id: 'fem008',
                 name: 'Crepinho Liso',
-                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
+                description: 'Tecido crepinho com forro, tamanho ÚNICO veste 38 ao 42, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
                     './img/feminino/crepinholiso.jpg',
                     './img/feminino/crepinholiso2.jpg',
                     './img/feminino/crepinholiso3.jpg'
                 ],
-                thumbnail: './img/feminino/crepinholiso.jpg'
+                thumbnail: './img/feminino/crepinholiso.jpg',
+                price: '119,90'
             },
             {
                 id: 'fem009',
@@ -328,12 +350,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/mulamancalinho.jpg',
                     './img/feminino/mulamancalinho2.jpg',
                 ],
-                thumbnail: './img/feminino/mulamancalinho.jpg'
+                thumbnail: './img/feminino/mulamancalinho.jpg',
+                price: 'indisponível'
             },
             {
                 id: 'fem010',
                 name: 'Plissado Executivo',
-                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
+                description: 'Tecido crepinho, tamanho G e GG, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
                     './img/feminino/plissadoexecutivo.jpg',
                     './img/feminino/plissadoexecutivo2.jpg',
@@ -341,12 +364,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/plissadoexecutivo4.jpg',
                     './img/feminino/plissadoexecutivo5.jpg'
                 ],
-                thumbnail: './img/feminino/plissadoexecutivo.jpg'
+                thumbnail: './img/feminino/plissadoexecutivo.jpg',
+                price: '129,90'
             },
             {
                 id: 'fem011',
                 name: 'Vestido Tati Linho Duna',
-                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
+                description: 'Tecido duna linho, com forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
                     './img/feminino/tatilinhoduna2.jpg',
                     './img/feminino/tatilinhoduna.jpg',
@@ -355,23 +379,25 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/tatilinhoduna5.jpg',
                     './img/feminino/tatilinhoduna6.jpg'
                 ],
-                thumbnail: './img/feminino/tatilinhoduna2.jpg'
+                thumbnail: './img/feminino/tatilinhoduna2.jpg',
+                price: '169,90'
             },
             {
                 id: 'fem012',
                 name: 'Vestido Camila',
-                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
+                description: 'Tecido Viscolinho, com forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
                     './img/feminino/vestidocamila.jpg',
                     './img/feminino/vestidocamila2.jpg',
                     './img/feminino/vestidocamila3.jpg'
                 ],
-                thumbnail: './img/feminino/vestidocamila.jpg'
+                thumbnail: './img/feminino/vestidocamila.jpg',
+                price: '149,90'
             },
             {
                 id: 'fem013',
                 name: 'Vestido Carol 3 Marias',
-                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
+                description: 'Vestido Carol 3 marias, manga longa, tecido duna com forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
                     './img/feminino/vestidocarol3marias.jpg',
                     './img/feminino/vestidocarol3marias2.jpg',
@@ -380,12 +406,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestidocarol3marias5.jpg',
                     './img/feminino/vestidocarol3marias6.jpg'
                 ],
-                thumbnail: './img/feminino/vestidocarol3marias.jpg'
+                thumbnail: './img/feminino/vestidocarol3marias.jpg',
+                price: '169,90'
             },
             {
                 id: 'fem014',
                 name: 'Vestido Cris Midi',
-                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
+                description: 'Vestido midi cris, tecido crepinho importado com forro, botão funcional, tamanho ÚNICO 38 ao 44 consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
                     './img/feminino/vestidocrismidi.jpg',
                     './img/feminino/vestidocrismidi2.jpg',
@@ -393,24 +420,26 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestidocrismidi4.jpg',
                     './img/feminino/vestidocrismidi5.jpg',
                 ],
-                thumbnail: './img/feminino/vestidocrismidi.jpg'
+                thumbnail: './img/feminino/vestidocrismidi.jpg',
+                price: '159,90'
             },
             {
                 id: 'fem015',
                 name: 'Vestido Curto com Alça',
-                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
+                description: 'Tecido crepinho sem forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
                     './img/feminino/vestidocurtoalca3.jpg',
                     './img/feminino/vestidocurtoalca.jpg',
                     './img/feminino/vestidocurtoalca2.jpg',
                     
                 ],
-                thumbnail: './img/feminino/vestidocurtoalca3.jpg'
+                thumbnail: './img/feminino/vestidocurtoalca3.jpg',
+                price: '79,90'
             },
             {
                 id: 'fem016',
                 name: 'Vestido Denise',
-                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
+                description: 'Vestido Midi Denise, tecido duna amassado com forro, tamanho ÚNICO veste até o 38,40,42,44 consultar cores disponíveis.',
                 images: [
                     './img/feminino/vestidodenise.jpg',
                     './img/feminino/vestidodenise2.jpg',
@@ -419,12 +448,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestidodenise5.jpg',
                     './img/feminino/vestidodenise6.jpg'
                 ],
-                thumbnail: './img/feminino/vestidodenise.jpg'
+                thumbnail: './img/feminino/vestidodenise.jpg',
+                price: '149,90'
             },
             {
                 id: 'fem017',
                 name: 'Vestido Duna',
-                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
+                description: 'Vestido Manguinha Duna com forro, tamanho P, M, G e GG, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
                     './img/feminino/vestidoduna.jpg',
                     './img/feminino/vestidoduna2.jpg',
@@ -432,12 +462,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestidoduna4.jpg',
                     './img/feminino/vestidoduna5.jpg'
                 ],
-                thumbnail: './img/feminino/vestidoduna.jpg'
+                thumbnail: './img/feminino/vestidoduna.jpg',
+                price: '169,90'
             },
             {
                 id: 'fem018',
                 name: 'Vestido Gola Padre',
-                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
+                description: 'Tecido Linho com forro, tamanho ÚNICO veste do 38 ao 42, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
                     './img/feminino/vestidogolapadre6.jpg',
                     './img/feminino/vestidogolapadre.jpg',
@@ -447,24 +478,26 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestidogolapadre5.jpg',
                     
                 ],
-                thumbnail: './img/feminino/vestidogolapadre6.jpg'
+                thumbnail: './img/feminino/vestidogolapadre6.jpg',
+                price: '169,90'
             },
             {
                 id: 'fem019',
                 name: 'Vestido Linho Alça',
-                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
+                description: 'Tecido Duna Linho, com forro e bolso, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
                     './img/feminino/vestidolinhoalca.jpg',
                     './img/feminino/vestidolinhoalca2.jpg',
                     './img/feminino/vestidolinhoalca3.jpg',
                     './img/feminino/vestidolinhoalca4.jpg'
                 ],
-                thumbnail: './img/feminino/vestidolinhoalca.jpg'
+                thumbnail: './img/feminino/vestidolinhoalca.jpg',
+                price: '159,90'
             },
             {
                 id: 'fem020',
                 name: 'Vestido Maria',
-                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
+                description: 'Tecido Viscolinho, importado com forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
                     './img/feminino/vestidomaria.jpg',
                     './img/feminino/vestidomaria2.jpg',
@@ -475,12 +508,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestidomaria7.jpg',
                     './img/feminino/vestidomaria8.jpg'
                 ],
-                thumbnail: './img/feminino/vestidomaria.jpg'
+                thumbnail: './img/feminino/vestidomaria.jpg',
+                price: '159,90'
             },
             {
                 id: 'fem021',
                 name: 'Vestido Princesa',
-                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
+                description: 'Tecido Linho com forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
                     './img/feminino/vestidoprincesa.jpg',
                     './img/feminino/vestidoprincesa2.jpg',
@@ -489,12 +523,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestidoprincesa5.jpg',
                     './img/feminino/vestidoprincesa6.jpg'
                 ],
-                thumbnail: './img/feminino/vestidoprincesa.jpg'
+                thumbnail: './img/feminino/vestidoprincesa.jpg',
+                price: '179,90'
             },
             {
                 id: 'fem022',
                 name: 'Vestido Tule Midi',
-                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
+                description: 'Vestido tule midi, com ótimo forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
                     './img/feminino/vestidotulemidi.jpg',
                     './img/feminino/vestidotulemidi2.jpg',
@@ -506,33 +541,35 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestidotulemidi8.jpg',
                     './img/feminino/vestidotulemidi9.jpg'
                 ],
-                thumbnail: './img/feminino/vestidotulemidi.jpg'
+                thumbnail: './img/feminino/vestidotulemidi.jpg',
+                price: '139,90'
             },
             {
                 id: 'fem023',
                 name: 'Vestido Camila Bordado',
-                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
+                description: 'Tamanho M, 38, 40 & G 42, 44. Consultar cores disponíveis.',
                 images: [
                     './img/feminino/vestidocamilabordado.jpg',
-
                 ],
-                thumbnail: './img/feminino/vestidocamilabordado.jpg'
+                thumbnail: './img/feminino/vestidocamilabordado.jpg',
+                price: '199,90'
             },
             {
                 id: 'fem024',
-                name: 'Vestido Lisa',
-                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
+                name: 'Vestido Elisa',
+                description: 'Vestido Elisa com cinto, tecido duna com forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/vestidoelisa.jpg',
                     './img/feminino/vestidoelisa2.jpg',
                     './img/feminino/vestidoelisa3.jpg',
                 ],
-                thumbnail: './img/feminino/vestidoelisa.jpg'
+                thumbnail: './img/feminino/vestidoelisa.jpg',
+                price: '169,90'
             },
             {
                 id: 'fem025',
                 name: 'Vestido Nanda',
-                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
+                description: 'Vestido Duna com forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/vestidonanda.jpg',
                     './img/feminino/vestidonanda2.jpg',
@@ -543,12 +580,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestidonanda7.jpg',
                     './img/feminino/vestidonanda8.jpg'
                 ],
-                thumbnail: './img/feminino/vestidonanda.jpg'
+                thumbnail: './img/feminino/vestidonanda.jpg',
+                price: '169,90'
             },
             {
                 id: 'fem026',
                 name: 'Vestido Plissado com Laço',
-                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
+                description: 'Vestido Plissado laço, tamanho ÚNICO veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/vestidoplissadolaco.jpg',
                     './img/feminino/vestidoplissadolaco2.jpg',
@@ -560,7 +598,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestidoplissadolaco8.jpg',
                     './img/feminino/vestidoplissadolaco9.jpg'
                 ],
-                thumbnail: './img/feminino/vestidoplissadolaco.jpg'
+                thumbnail: './img/feminino/vestidoplissadolaco.jpg',
+                price: '149,90'
             },
         ],
         masculino: [
@@ -658,6 +697,7 @@ document.addEventListener('DOMContentLoaded', () => {
         modalMainImage.alt = `Imagem principal de ${product.name}`;
         modalProductName.textContent = product.name;
         modalProductDescription.textContent = product.description;
+        precoProduto.textContent = `Valor: R$ ${product.price}`; // Exemplo de preço, pode ser ajustado conforme necessário
 
         modalThumbnailsContainer.innerHTML = ''; // Limpa thumbnails anteriores
         product.images.forEach((imgSrc, index) => {
