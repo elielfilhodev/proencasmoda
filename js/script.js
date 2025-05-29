@@ -24,8 +24,134 @@ document.addEventListener('DOMContentLoaded', () => {
     const productsData = {
         feminino: [
             {
+                id: 'fem035',
+                name: 'Vestido Milene',
+                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                images: [
+                    './img/feminino/vestidomilene.jpg',
+                    './img/feminino/vestidomilene2.jpg',
+                    './img/feminino/vestidomilene3.jpg',
+                    './img/feminino/vestidomilene4.jpg',
+                    './img/feminino/vestidomilene5.jpg',
+                    './img/feminino/vestidomilene6.jpg',
+                    './img/feminino/vestidomilene7.jpg',
+                    './img/feminino/vestidomilene8.jpg',
+                    './img/feminino/vestidomilene9.jpg',
+                    './img/feminino/vestidomilene10.jpg',
+
+                ],
+                thumbnail: './img/feminino/vestidomilene.jpg' // Imagem para o card no catálogo
+            },
+            {
+                id: 'fem034',
+                name: 'Vestido Maya Linho',
+                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                images: [
+                    './img/feminino/vestidomayalinho.jpg',
+                    './img/feminino/vestidomayalinho2.jpg',
+                    './img/feminino/vestidomayalinho3.jpg',
+                    './img/feminino/vestidomayalinho4.jpg',
+                    './img/feminino/vestidomayalinho5.jpg',
+                    './img/feminino/vestidomayalinho6.jpg',
+                    './img/feminino/vestidomayalinho7.jpg',
+                    './img/feminino/vestidomayalinho8.jpg',
+                    './img/feminino/vestidomayalinho9.jpg',
+                ],
+                thumbnail: './img/feminino/vestidomayalinho.jpg' // Imagem para o card no catálogo
+            },
+            {
+                id: 'fem033',
+                name: 'Vestido Laço Plissado',
+                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                images: [
+                    './img/feminino/vestidolacoplissado.jpg',
+                    './img/feminino/vestidolacoplissado2.jpg',
+                    './img/feminino/vestidolacoplissado3.jpg',
+                ],
+                thumbnail: './img/feminino/vestidolacoplissado.jpg' // Imagem para o card no catálogo
+            },
+            {
+                id: 'fem032',
+                name: 'Vestido Kelly Linho',
+                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                images: [
+                    './img/feminino/vestidokellylinho.jpg',
+                    './img/feminino/vestidokellylinho2.jpg',
+                    './img/feminino/vestidokellylinho3.jpg',
+                    './img/feminino/vestidokellylinho4.jpg',
+                    './img/feminino/vestidokellylinho5.jpg',
+                    './img/feminino/vestidokellylinho6.jpg',
+                ],
+                thumbnail: './img/feminino/vestidokellylinho.jpg' // Imagem para o card no catálogo
+            },
+            {
+                id: 'fem031',
+                name: 'Vestido Floral Curto',
+                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                images: [
+                    './img/feminino/vestidofloralcurto.jpg', // Imagem principal (exemplo maior)
+                ],
+                thumbnail: './img/feminino/vestidofloralcurto.jpg' // Imagem para o card no catálogo
+            },
+            {
+                id: 'fem030',
+                name: 'Vestido Vestido Floral',
+                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                images: [
+                    './img/feminino/vestidofloral.jpg',
+                    './img/feminino/vestidofloral2.jpg',
+                    './img/feminino/vestidofloral3.jpg',
+                    './img/feminino/vestidofloral4.jpg',
+                    './img/feminino/vestidofloral5.jpg',
+                    './img/feminino/vestidofloral6.jpg',
+                    './img/feminino/vestidofloral7.jpg',
+                    './img/feminino/vestidofloral8.jpg',
+                    './img/feminino/vestidofloral9.jpg',
+                    './img/feminino/vestidofloral10.jpg'
+                ],
+                thumbnail: './img/feminino/vestidofloral.jpg' // Imagem para o card no catálogo
+            },
+            {
+                id: 'fem029',
+                name: 'Saia Courino',
+                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                images: [
+                    './img/feminino/saiacourino.jpg',
+                    './img/feminino/saiacourino2.jpg',
+                    './img/feminino/saiacourino3.jpg',
+                    './img/feminino/saiacourino4.jpg',
+                    './img/feminino/saiacourino5.jpg',
+                ],
+                thumbnail: './img/feminino/saiacourino.jpg' // Imagem para o card no catálogo
+            },
+            {
+                id: 'fem028',
+                name: 'Cardigan de Lã',
+                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                images: [
+                    './img/feminino/cardigandela',
+                    './img/feminino/cardigandela2.jpg',
+                    './img/feminino/cardigandela3.jpg',
+                    './img/feminino/cardigandela4.jpg',
+                ],
+                thumbnail: './img/feminino/cardigandela.jpg' // Imagem para o card no catálogo
+            },
+                {
+                id: 'fem027',
+                name: 'Vestido Bordado com Brilho',
+                description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
+                images: [
+                    './img/feminino/vestidobordadobrilho.jpg',
+                    './img/feminino/vestidobordadobrilho2.jpg',
+                    './img/feminino/vestidobordadobrilho3.jpg',
+                    './img/feminino/vestidobordadobrilho4.jpg',
+                    './img/feminino/vestidobordadobrilho5.jpg',
+                ],
+                thumbnail: './img/feminino/vestidobordadobrilho.jpg' // Imagem para o card no catálogo
+            },
+            {
                 id: 'fem001',
-                name: 'Vestido Midi Floral Primaveril',
+                name: 'Vestido Tais',
                 description: 'Um vestido midi encantador com estampa floral vibrante, perfeito para ocasiões especiais ou um dia ensolarado. Tecido leve, com caimento fluido e confortável, realçando a silhueta de forma elegante.',
                 images: [
                     './img/feminino/vestido-tais (1).jpg', // Imagem principal (exemplo maior)
@@ -40,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem002',
-                name: 'Blusa de Seda Pura com Detalhe em Laço',
+                name: 'Vestido Curto Plissado',
                 description: 'Blusa sofisticada confeccionada em seda pura, proporcionando um toque suave e luxuoso. Possui um elegante detalhe de laço no pescoço, ideal para compor looks de trabalho refinados ou para eventos formais.',
                 images: [
                     './img/feminino/vestidocurtoplissado.jpg',
@@ -51,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem003',
-                name: 'Calça Jeans Skinny Premium Destroyed',
+                name: 'Vestido Jéssica',
                 description: 'Calça jeans skinny com lavagem moderna e detalhes destroyed sutis, conferindo um visual contemporâneo. Tecido com alta elasticidade para máximo conforto e modelagem que valoriza o corpo.',
                 images: [
                     './img/feminino/vestidojessica.jpg', // Imagem principal (exemplo maior)
@@ -61,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem004',
-                name: 'Saia Plissada Midi Metálica Rosé',
+                name: 'Vestido Lesi Midi',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
                     './img/feminino/vestidolesimid.jpg', 
@@ -75,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem005',
-                name: 'Saia Plissada Midi Metálica Rosé',
+                name: 'Vestido Natalia Tule',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
                     './img/feminino/vestidonataliatule.jpg', 
@@ -85,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem006',
-                name: 'Saia Plissada Midi Metálica Rosé',
+                name: 'Conjunto Linho',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
                     './img/feminino/conjuntolinho.jpg', 
@@ -96,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem007',
-                name: 'Saia Plissada Midi Metálica Rosé',
+                name: 'Conjunto Sensorial',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
                     './img/feminino/conjuntosensorial.jpg',
@@ -106,7 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem008',
-                name: 'Saia Plissada Midi Metálica Rosé',
+                name: 'Crepinho Liso',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
                     './img/feminino/crepinholiso.jpg',
@@ -117,7 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem009',
-                name: 'Saia Plissada Midi Metálica Rosé',
+                name: 'Mula Manca Linho',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
                     './img/feminino/mulamancalinho.jpg',
@@ -127,7 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem010',
-                name: 'Saia Plissada Midi Metálica Rosé',
+                name: 'Plissado Executivo',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
                     './img/feminino/plissadoexecutivo.jpg',
@@ -140,7 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem011',
-                name: 'Saia Plissada Midi Metálica Rosé',
+                name: 'Tati Linho Duna',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
                     './img/feminino/tatilinhoduna.jpg',
@@ -154,7 +280,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem012',
-                name: 'Saia Plissada Midi Metálica Rosé',
+                name: 'Vestido Camila',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
                     './img/feminino/vestidocamila.jpg',
@@ -165,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem013',
-                name: 'Saia Plissada Midi Metálica Rosé',
+                name: 'Vestido Carol 3 Marias',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
                     './img/feminino/vestidocarol3marias.jpg',
@@ -179,7 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem014',
-                name: 'Saia Plissada Midi Metálica Rosé',
+                name: 'Vestido Cris Midi',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
                     './img/feminino/vestidocrismidi.jpg',
@@ -192,7 +318,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem015',
-                name: 'Saia Plissada Midi Metálica Rosé',
+                name: 'Vestido Curto com Alça',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
                     './img/feminino/vestidocurtoalca.jpg',
@@ -203,7 +329,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem016',
-                name: 'Saia Plissada Midi Metálica Rosé',
+                name: 'Vestido Denise',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
                     './img/feminino/vestidodenise.jpg',
@@ -217,7 +343,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem017',
-                name: 'Saia Plissada Midi Metálica Rosé',
+                name: 'Vestido Duna',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
                     './img/feminino/vestidoduna.jpg',
@@ -230,7 +356,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem018',
-                name: 'Saia Plissada Midi Metálica Rosé',
+                name: 'Vestdigo Gola Padre',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
                     './img/feminino/vestidogolapadre.jpg',
@@ -244,7 +370,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem019',
-                name: 'Saia Plissada Midi Metálica Rosé',
+                name: 'Vestido Linho Alça',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
                     './img/feminino/vestidolinhoalca.jpg',
@@ -256,7 +382,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem020',
-                name: 'Saia Plissada Midi Metálica Rosé',
+                name: 'Vestido Maria',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
                     './img/feminino/vestidomaria.jpg',
@@ -272,7 +398,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem021',
-                name: 'Saia Plissada Midi Metálica Rosé',
+                name: 'Vestido Princesa',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
                     './img/feminino/vestidoprincesa.jpg',
@@ -286,7 +412,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem022',
-                name: 'Saia Plissada Midi Metálica Rosé',
+                name: 'Vestido Tule Midi',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
                     './img/feminino/vestidotulemidi.jpg',
@@ -303,7 +429,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem023',
-                name: 'Saia Plissada Midi Metálica Rosé',
+                name: 'Vestido Camila Bordado',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
                     './img/feminino/vestidocamilabordado.jpg',
@@ -313,7 +439,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem024',
-                name: 'Saia Plissada Midi Metálica Rosé',
+                name: 'Vestido Lisa',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
                     './img/feminino/vestidoelisa.jpg',
@@ -324,7 +450,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem025',
-                name: 'Saia Plissada Midi Metálica Rosé',
+                name: 'Vestido Nanda',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
                     './img/feminino/vestidonanda.jpg',
@@ -340,7 +466,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem026',
-                name: 'Saia Plissada Midi Metálica Rosé',
+                name: 'Vestido Plissado com Laço',
                 description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
                 images: [
                     './img/feminino/vestidoplissadolaco.jpg',
