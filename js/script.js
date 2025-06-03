@@ -25,6 +25,133 @@ document.addEventListener('DOMContentLoaded', () => {
     const productsData = {
         feminino: [
             {
+                id: 'fem049',
+                name: 'Vestido Longo com fenda',
+                description: 'Vestido Midi, tecido crepinho, veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                images: [
+                    './img/feminino/vestidolongocomfenda.jpg',
+
+                ],
+                thumbnail: './img/feminino/vestidolongocomfenda.jpg',
+                price: '129,90',
+            },
+            {
+                id: 'fem048',
+                name: 'Vestido Longo com alça bordado',
+                description: 'Vestido Midi, tecido crepinho, veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                images: [
+                    './img/feminino/vestidolongocomalçabordado.jpg',
+                    './img/feminino/vestidolongocomalçabordado2.jpg',
+                ],
+                thumbnail: './img/feminino/vestidolongocomalçabordado.jpg',
+                price: '129,90',
+            },
+            {
+                id: 'fem047',
+                name: 'Vestido Longo Alça Estrela',
+                description: 'Vestido Midi, tecido crepinho, veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                images: [
+                    './img/feminino/vestidolongoalçaestrela.jpg',
+                    './img/feminino/vestidolongoalçaestrela2.jpg',
+                    './img/feminino/vestidolongoalçaestrela3.jpg',
+                    './img/feminino/vestidolongoalçaestrela4.jpg',
+                    './img/feminino/vestidolongoalçaestrela5.jpg',
+                    './img/feminino/vestidolongoalçaestrela6.jpg',
+                    './img/feminino/vestidolongoalçaestrela7.jpg'
+
+                ],
+                thumbnail: './img/feminino/vestidolongoalçaestrela.jpg',
+                price: '129,90',
+            },
+            {
+                id: 'fem046',
+                name: 'Vestido Linho Leidy',
+                description: 'Vestido Midi, tecido crepinho, veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                images: [
+                    './img/feminino/vestidolinholeidy.jpg',
+                    './img/feminino/vestidolinholeidy2.jpg',
+                    './img/feminino/vestidolinholeidy3.jpg',
+                    './img/feminino/vestidolinholeidy4.jpg',
+                    './img/feminino/vestidolinholeidy5.jpg',
+                    './img/feminino/vestidolinholeidy6.jpg'
+                ],
+                thumbnail: './img/feminino/vestidolinholeidy.jpg',
+                price: '129,90',
+            },
+            {
+                id: 'fem045',
+                name: 'Vestido Duna Midi',
+                description: 'Vestido Midi, tecido crepinho, veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                images: [
+                    './img/feminino/vestidodunamidi.jpg',
+                    './img/feminino/vestidodunamidi2.jpg',
+                    './img/feminino/vestidodunamidi3.jpg',
+                    './img/feminino/vestidodunamidi4.jpg',
+                    './img/feminino/vestidodunamidi5.jpg'
+
+                ],
+                thumbnail: './img/feminino/vestidodunamidi.jpg',
+                price: '129,90',
+            },
+            {
+                id: 'fem044',
+                name: 'Vestido Emille',
+                description: 'Vestido Midi, tecido crepinho, veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                images: [
+                    './img/feminino/vestidocurtoemille.jpg',
+                    './img/feminino/vestidocurtoemille2.jpg',
+                    './img/feminino/vestidocurtoemille3.jpg',
+                    './img/feminino/vestidocurtoemille4.jpg',
+
+                ],
+                thumbnail: './img/feminino/vestidocurtoemille.jpg',
+                price: '129,90',
+            },
+            {
+                id: 'fem043',
+                name: 'Vestido Bete',
+                description: 'Vestido Midi, tecido crepinho, veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                images: [
+                    './img/feminino/vestidobete.jpg',
+                    './img/feminino/vestidobete2.jpg',
+                    './img/feminino/vestidobete3.jpg',
+
+                ],
+                thumbnail: './img/feminino/vestidobete.jpg',
+                price: '129,90',
+            },
+            {
+                id: 'fem042',
+                name: 'Vestido Longuete',
+                description: 'Vestido Midi, tecido crepinho, veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                images: [
+                    './img/feminino/vestido longuete.jpg',
+                    './img/feminino/vestidolonguete2.jpg',
+                    './img/feminino/vestidolonguete3.jpg',
+                    './img/feminino/vestidolonguete4.jpg',
+                    './img/feminino/vestidolonguete5.jpg'
+
+                ],
+                thumbnail: './img/feminino/vestido longuete.jpg',
+                price: '129,90',
+            },
+            {
+                id: 'fem041',
+                name: 'Conjunto Alça',
+                description: 'Vestido Midi, tecido crepinho, veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                images: [
+                    './img/feminino/conjuntoalça.jpg',
+                    './img/feminino/conjuntoalça2.jpg',
+                    './img/feminino/conjuntoalça3.jpg',
+                    './img/feminino/conjuntoalça4.jpg',
+                    './img/feminino/conjuntoalça5.jpg',
+                    './img/feminino/conjuntoalça6.jpg'
+
+                ],
+                thumbnail: './img/feminino/conjuntoalça.jpg',
+                price: '129,90',
+            },
+            {
                 id: 'fem040',
                 name: 'Vestido Prisila',
                 description: 'Vestido Midi, tecido crepinho, veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
