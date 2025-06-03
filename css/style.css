@@ -1,4 +1,7 @@
 /* css/style.css */
+/* O CSS existente não precisa de alterações para esta adição, */
+/* pois o .category-grid já está configurado para se adaptar. */
+/* Cole o seu CSS atual aqui. */
 :root {
     --primary-color: #c58935; /* Azul escuro acinzentado */
     --secondary-color: #f8f9fa; /* Cinza muito claro, quase branco */
@@ -324,36 +327,34 @@ main {
 
 .modal-main-image-container {
     width: 100%;
-    /* A altura será definida pela imagem, até o max-height */
-    max-height: 70vh; /* Limita altura máxima da imagem principal no contêiner */
-    overflow: hidden; /* Essencial para o efeito de zoom contido */
+    max-height: 70vh; 
+    overflow: hidden; 
     margin-bottom: 20px;
     border-radius: var(--border-radius);
     border: 1px solid var(--border-color);
-    cursor: zoom-in; /* Indica que a imagem pode ser "zoomada" */
-    display: flex; /* Para centralizar a imagem se ela for menor que o contêiner */
-    align-items: center; /* Para centralizar a imagem verticalmente */
-    justify-content: center; /* Para centralizar a imagem horizontalmente */
+    cursor: zoom-in; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
 }
 
 #modalMainImage {
     display: block;
-    width: auto; /* A imagem usa sua largura original */
-    height: auto; /* A imagem usa sua altura original */
-    max-width: 100%; /* Não ultrapassa a largura do contêiner */
-    max-height: 100%; /* Não ultrapassa a altura do contêiner */
-    /* object-fit: contain; FOI REMOVIDO */
-    transition: transform 0.3s ease-out; /* Para o zoom suave */
+    width: auto; 
+    height: auto; 
+    max-width: 100%; 
+    max-height: 100%; 
+    transition: transform 0.3s ease-out; 
 }
 
 .modal-main-image-container:hover #modalMainImage {
-    transform: scale(1.25); /* Efeito de zoom ao passar o mouse */
+    transform: scale(1.25); 
 }
 
 .modal-thumbnails {
     display: flex;
     gap: 12px;
-    justify-content: flex-start; /* Alinha thumbnails à esquerda */
+    justify-content: flex-start; 
     flex-wrap: wrap;
 }
 
@@ -376,8 +377,8 @@ main {
 }
 
 .modal-product-details {
-    flex: 1; /* Ocupa o restante do espaço */
-    padding-top: 10px; /* Pequeno ajuste de alinhamento */
+    flex: 1; 
+    padding-top: 10px; 
 }
 
 #modalProductName {
@@ -394,6 +395,14 @@ main {
     color: #555;
     margin-bottom: 25px;
 }
+#precoProduto { /* Estilização básica para o preço */
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: var(--font-headings);
+}
+
 
 /* Rodapé */
 .main-footer-credits {
@@ -401,7 +410,7 @@ main {
     color: var(--secondary-color);
     text-align: center;
     padding: 30px 20px;
-    margin-top: auto; /* Empurra o rodapé para o final da página */
+    margin-top: auto; 
     font-size: 0.9rem;
 }
 
@@ -424,7 +433,7 @@ main {
 
 
 /* Responsividade */
-@media (max-width: 992px) { /* Tablets e Desktops menores */
+@media (max-width: 992px) { 
     .modal-body {
         flex-direction: column;
     }
@@ -433,14 +442,14 @@ main {
         margin-bottom: 25px;
     }
     .modal-main-image-container {
-        max-height: 60vh; /* Ajuste para telas menores */
+        max-height: 60vh; 
     }
     .modal-thumbnails {
-        justify-content: center; /* Centraliza thumbnails em telas menores */
+        justify-content: center; 
     }
 }
 
-@media (max-width: 768px) { /* Tablets em modo retrato e celulares grandes */
+@media (max-width: 768px) { 
     .main-header {
         padding: 40px 15px 30px;
     }
@@ -450,9 +459,9 @@ main {
     .category-grid, .product-grid {
         gap: 25px;
     }
-    .category-grid {
-        grid-template-columns: 1fr; /* Uma coluna para categorias */
-    }
+    /* .category-grid {
+        grid-template-columns: 1fr; Comentado para permitir que o auto-fit funcione melhor com 3+ itens
+    } */
     .product-grid {
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     }
@@ -460,10 +469,10 @@ main {
         padding: 25px;
         width: 95%;
         max-height: 90vh;
-        overflow-y: auto; /* Scroll dentro do modal se necessário */
+        overflow-y: auto; 
     }
     .modal-main-image-container {
-       max-height: 50vh; /* Ajuste para telas menores */
+       max-height: 50vh; 
     }
     .thumbnail-item {
         width: 75px;
@@ -474,13 +483,13 @@ main {
     }
 }
 
-@media (max-width: 480px) { /* Celulares */
+@media (max-width: 480px) { 
     .product-grid {
-        grid-template-columns: 1fr; /* Uma coluna para produtos */
+        grid-template-columns: 1fr; 
     }
     .modal-main-image-container {
         height: auto;
-        max-height: 45vh; /* Ajuste para telas bem pequenas */
+        max-height: 45vh; 
     }
     .close-button {
         top: 15px;

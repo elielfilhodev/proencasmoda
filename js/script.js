@@ -602,6 +602,111 @@ document.addEventListener('DOMContentLoaded', () => {
                 price: '149,90'
             },
         ],
+
+
+
+
+
+            feminino_plus: [ // NOVA COLEÇÃO MODA PLUS
+            {
+                id: 'fplus001',
+                name: 'Macacão Pantalona Plus Size Elegante',
+                description: 'Macacão pantalona plus size que combina conforto e elegância. Tecido fluido com excelente caimento, decote V transpassado e cinto para marcar a cintura. Perfeito para eventos ou um look sofisticado.',
+                images: [
+                    './img/feminino_plus/chemiseplus.jpg',
+                    './img/feminino_plus/chemiseplus2.jpg',
+                ],
+                thumbnail: './img/feminino_plus/chemiseplus.jpg', // Substitua por sua imagem
+                price: '189,90', // Exemplo de preço
+            },
+            {
+                id: 'fplus002',
+                name: 'Vestido Chemise Plus Size Estampado',
+                description: 'Vestido chemise plus size com estampa moderna e alegre. Modelagem soltinha, mangas 3/4 e fechamento por botões frontais. Versátil para diversas ocasiões, do casual ao mais arrumado.',
+                images: [
+                    './img/feminino_plus/dunaplusmangalonga.jpg',
+                    './img/feminino_plus/dunaplusmangalonga2.jpg'
+                ],
+                thumbnail: './img/feminino_plus/dunaplusmangalonga.jpg', 
+                price: '159,90',
+            },
+            {
+                id: 'fplus003',
+                name: 'Blusa Ciganinha Plus Size com Renda',
+                description: 'Blusa modelo ciganinha plus size, com ombros à mostra e detalhes delicados em renda. Tecido leve e fresco, ideal para os dias mais quentes, compondo looks românticos e femininos.',
+                images: [
+                    './img/feminino_plus/plusalcaduna.jpg',
+                    './img/feminino_plus/plusalcaduna2.jpg',
+                    './img/feminino_plus/plusalcaduna3.jpg'
+                ],
+                thumbnail: './img/feminino_plus/plusalcaduna.jpg',
+                price: '89,90',
+            },
+            {
+                id: 'fplus004',
+                name: 'Blusa Ciganinha Plus Size com Renda',
+                description: 'Blusa modelo ciganinha plus size, com ombros à mostra e detalhes delicados em renda. Tecido leve e fresco, ideal para os dias mais quentes, compondo looks românticos e femininos.',
+                images: [
+                    './img/feminino_plus/plusbordado.jpg',
+                    './img/feminino_plus/plusbordado2.jpg'
+                ],
+                thumbnail: './img/feminino_plus/plusbordado.jpg',
+                price: '89,90',
+            },
+            {
+                id: 'fplus005',
+                name: 'Blusa Ciganinha Plus Size com Renda',
+                description: 'Blusa modelo ciganinha plus size, com ombros à mostra e detalhes delicados em renda. Tecido leve e fresco, ideal para os dias mais quentes, compondo looks românticos e femininos.',
+                images: [
+                    './img/feminino_plus/vestidofolhaplus.jpg',
+                ],
+                thumbnail: './img/feminino_plus/vestidofolhaplus.jpg',
+                price: '89,90',
+            },
+            {
+                id: 'fplus006',
+                name: 'Blusa Ciganinha Plus Size com Renda',
+                description: 'Blusa modelo ciganinha plus size, com ombros à mostra e detalhes delicados em renda. Tecido leve e fresco, ideal para os dias mais quentes, compondo looks românticos e femininos.',
+                images: [
+                    './img/feminino_plus/vestidolinhoplus.jpg',
+                    './img/feminino_plus/vestidolinhoplus2.jpg',
+                    './img/feminino_plus/vestidolinhoplus3.jpg',
+                    './img/feminino_plus/vestidolinhoplus4.jpg'
+                ],
+                thumbnail: './img/feminino_plus/vestidolinhoplus.jpg',
+                price: '89,90',
+            },
+            {
+                id: 'fplus007',
+                name: 'Blusa Ciganinha Plus Size com Renda',
+                description: 'Blusa modelo ciganinha plus size, com ombros à mostra e detalhes delicados em renda. Tecido leve e fresco, ideal para os dias mais quentes, compondo looks românticos e femininos.',
+                images: [
+                    './img/feminino_plus/vestidoplissadoplus.jpg',
+                    './img/feminino_plus/vestidoplissadoplus2.jpg',
+                    './img/feminino_plus/vestidoplissadoplus3.jpg',
+                    './img/feminino_plus/vestidoplissadoplus4.jpg',
+                    './img/feminino_plus/vestidoplissadoplus5.jpg'
+                ],
+                thumbnail: './img/feminino_plus/vestidoplissadoplus.jpg',
+                price: '89,90',
+            },
+            {
+                id: 'fplus008',
+                name: 'Blusa Ciganinha Plus Size com Renda',
+                description: 'Blusa modelo ciganinha plus size, com ombros à mostra e detalhes delicados em renda. Tecido leve e fresco, ideal para os dias mais quentes, compondo looks românticos e femininos.',
+                images: [
+                    './img/feminino_plus/vestidoplusgabi.jpg',
+                    './img/feminino_plus/vestidoplusgabi2.jpg',
+                    './img/feminino_plus/vestidoplusgabi3.jpg',
+                    './img/feminino_plus/vestidoplusgabi4.jpg',
+                    './img/feminino_plus/vestidoplusgabi5.jpg',
+                    './img/feminino_plus/vestidoplusgabi6.jpg',
+                    './img/feminino_plus/vestidoplusgabi7.jpg'
+                ],
+                thumbnail: './img/feminino_plus/vestidoplusgabi.jpg',
+                price: '89,90',
+            },
+        ],
         masculino: [
             {
                 id: 'masc001',
