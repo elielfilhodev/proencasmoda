@@ -25,6 +25,38 @@ document.addEventListener('DOMContentLoaded', () => {
     const productsData = {
         feminino: [
             {
+                id: 'fem051',
+                name: 'Vestido Paty Bordado',
+                description: 'Vestido Midi, tecido crepinho, veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                images: [
+                    './img/feminino/vestidopatybordado.jpg',
+                    './img/feminino/vestidopatybordado2.jpg',
+                    './img/feminino/vestidopatybordado3.jpg',
+                    './img/feminino/vestidopatybordado5.jpg',
+                    './img/feminino/vestidopatybordado6.jpg',
+                    './img/feminino/vestidopatybordado7.jpg'
+
+                ],
+                thumbnail: './img/feminino/vestidopatybordado.jpg',
+                price: '129,90',
+            },
+            {
+                id: 'fem050',
+                name: 'Vestido Carolina',
+                description: 'Vestido Midi, tecido crepinho, veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                images: [
+                    './img/feminino/vestidocarolina.jpg',
+                    './img/feminino/vestidocarolina2.jpg',
+                    './img/feminino/vestidocarolina3.jpg',
+                    './img/feminino/vestidocarolina4.jpg',
+                    './img/feminino/vestidocarolina5.jpg',
+                    './img/feminino/vestidocarolina6.jpg'
+
+                ],
+                thumbnail: './img/feminino/vestidocarolina.jpg',
+                price: '129,90',
+            },
+            {
                 id: 'fem049',
                 name: 'Vestido Longo com fenda',
                 description: 'Vestido Midi, tecido crepinho, veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
