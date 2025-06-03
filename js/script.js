@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 id: 'fem051',
                 name: 'Vestido Paty Bordado',
-                description: 'Vestido Midi, tecido crepinho, veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                description: 'Tecido Viscomida bordado com forro, tamanho único veste até o 44, consultar cores disponíveis',
                 images: [
                     './img/feminino/vestidopatybordado.jpg',
                     './img/feminino/vestidopatybordado2.jpg',
@@ -38,12 +38,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 ],
                 thumbnail: './img/feminino/vestidopatybordado.jpg',
-                price: '129,90',
+                price: '169,90',
             },
             {
                 id: 'fem050',
                 name: 'Vestido Carolina',
-                description: 'Vestido Midi, tecido crepinho, veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                description: 'Tecido Viscolinho com forro, manga 3/4 tamanho único, veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/vestidocarolina.jpg',
                     './img/feminino/vestidocarolina2.jpg',
@@ -54,34 +54,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 ],
                 thumbnail: './img/feminino/vestidocarolina.jpg',
-                price: '129,90',
+                price: '159,90',
             },
             {
                 id: 'fem049',
                 name: 'Vestido Longo com fenda',
-                description: 'Vestido Midi, tecido crepinho, veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                description: 'Tecido Viscolinho, com forro, tamanho único, veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/vestidolongocomfenda.jpg',
-
                 ],
                 thumbnail: './img/feminino/vestidolongocomfenda.jpg',
-                price: '129,90',
+                price: '149,90',
             },
             {
                 id: 'fem048',
                 name: 'Vestido Longo com alça bordado',
-                description: 'Vestido Midi, tecido crepinho, veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                description: 'Tecido duna com forro bordado, tamanho único, veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/vestidolongocomalçabordado.jpg',
                     './img/feminino/vestidolongocomalçabordado2.jpg',
                 ],
                 thumbnail: './img/feminino/vestidolongocomalçabordado.jpg',
-                price: '129,90',
+                price: '149,90',
             },
             {
                 id: 'fem047',
                 name: 'Vestido Longo Alça Estrela',
-                description: 'Vestido Midi, tecido crepinho, veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                description: 'Tecido duna com forro, tamanho único, veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/vestidolongoalçaestrela.jpg',
                     './img/feminino/vestidolongoalçaestrela2.jpg',
@@ -93,12 +92,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 ],
                 thumbnail: './img/feminino/vestidolongoalçaestrela.jpg',
-                price: '129,90',
+                price: '149,90',
             },
             {
                 id: 'fem046',
                 name: 'Vestido Linho Leidy',
-                description: 'Vestido Midi, tecido crepinho, veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                description: 'Tecido Linho com forro, tamanho único, veste até o 46, consultar cores disponíveis.',
                 images: [
                     './img/feminino/vestidolinholeidy.jpg',
                     './img/feminino/vestidolinholeidy2.jpg',
@@ -108,12 +107,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestidolinholeidy6.jpg'
                 ],
                 thumbnail: './img/feminino/vestidolinholeidy.jpg',
-                price: '129,90',
+                price: '159,90',
             },
             {
                 id: 'fem045',
                 name: 'Vestido Duna Midi',
-                description: 'Vestido Midi, tecido crepinho, veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                description: 'Vestido duna Midi com cinto, tamanho M, 38, 40, tamanho G 42, 44, com bojo e forro/látex nas costas, consultar cores disponíveis.',
                 images: [
                     './img/feminino/vestidodunamidi.jpg',
                     './img/feminino/vestidodunamidi2.jpg',
@@ -123,12 +122,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 ],
                 thumbnail: './img/feminino/vestidodunamidi.jpg',
-                price: '129,90',
+                price: '139,90',
             },
             {
                 id: 'fem044',
                 name: 'Vestido Emille',
-                description: 'Vestido Midi, tecido crepinho, veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                description: 'Tecido Duna, tamanho único, veste até o 46, consultar cores disponíveis.',
                 images: [
                     './img/feminino/vestidocurtoemille.jpg',
                     './img/feminino/vestidocurtoemille2.jpg',
@@ -137,12 +136,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 ],
                 thumbnail: './img/feminino/vestidocurtoemille.jpg',
-                price: '129,90',
+                price: '79,90',
             },
             {
                 id: 'fem043',
                 name: 'Vestido Bete',
-                description: 'Vestido Midi, tecido crepinho, veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                description: 'Tecido duna com forro, tamanho único, veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/vestidobete.jpg',
                     './img/feminino/vestidobete2.jpg',
@@ -150,12 +149,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 ],
                 thumbnail: './img/feminino/vestidobete.jpg',
-                price: '129,90',
+                price: '159,90',
             },
             {
                 id: 'fem042',
                 name: 'Vestido Longuete',
-                description: 'Vestido Midi, tecido crepinho, veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                description: 'Tecido Chambrae, Tamanho M/40 G/42 GG/44, OBS: botões não funcionais.',
                 images: [
                     './img/feminino/vestido longuete.jpg',
                     './img/feminino/vestidolonguete2.jpg',
@@ -165,12 +164,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 ],
                 thumbnail: './img/feminino/vestido longuete.jpg',
-                price: '129,90',
+                price: '169,90',
             },
             {
                 id: 'fem041',
                 name: 'Conjunto Alça',
-                description: 'Vestido Midi, tecido crepinho, veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                description: 'Tecido Linho com forro, tamanho único, veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/conjuntoalça.jpg',
                     './img/feminino/conjuntoalça2.jpg',
@@ -181,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 ],
                 thumbnail: './img/feminino/conjuntoalça.jpg',
-                price: '129,90',
+                price: '169,90',
             },
             {
                 id: 'fem040',
@@ -675,14 +674,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: 'Vestido Princesa',
                 description: 'Tecido Linho com forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
-                    './img/feminino/vestidoprincesa.jpg',
                     './img/feminino/vestidoprincesa2.jpg',
                     './img/feminino/vestidoprincesa3.jpg',
                     './img/feminino/vestidoprincesa4.jpg',
                     './img/feminino/vestidoprincesa5.jpg',
                     './img/feminino/vestidoprincesa6.jpg'
                 ],
-                thumbnail: './img/feminino/vestidoprincesa.jpg',
+                thumbnail: './img/feminino/vestidoprincesa2.jpg',
                 price: '179,90'
             },
             {
