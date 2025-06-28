@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proença's Moda</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <header class="main-header">
@@ -21,28 +25,64 @@
             <h2 class="section-title">Nossas Coleções</h2>
             <div class="category-grid">
                 <div class="category-card" data-category="feminino">
-                    <img src="./img/feminino/vestido-tais (1).jpg" alt="Moda Feminina" class="category-image"> <div class="category-info">
+                    <img src="./img/feminino/vestido-tais (1).jpg" alt="Moda Feminina" class="category-image">
+                    <div class="category-info">
                         <h3>Feminino</h3>
                         <p>Explore as últimas tendências</p>
                     </div>
                 </div>
                 <div class="category-card" data-category="feminino_plus">
-                    <img src="./img/feminino_plus/chemiseplus.jpg" alt="Moda Feminina Plus Size" class="category-image"> <div class="category-info">
+                    <img src="./img/feminino_plus/chemiseplus.jpg" alt="Moda Feminina Plus Size" class="category-image">
+                    <div class="category-info">
                         <h3>Feminino Plus</h3>
                         <p>Curvas valorizadas com estilo</p>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- Adicione esta seção após a seção de categorias principais -->
+        <section id="subcategory-selection" class="subcategory-section">
+            <h2 class="section-title">Moda Feminina</h2>
+            <div class="subcategory-grid">
+                <div class="subcategory-card" data-subcategory="feminino_vestidos">
+                    <img src="./img/feminino/vestido-tais (1).jpg" alt="Vestidos Femininos" class="subcategory-image">
+                    <div class="subcategory-info">
+                        <h3>Vestidos</h3>
+                        <p>Elegância e conforto em nossos modelos</p>
+                    </div>
                 </div>
+                <div class="subcategory-card" data-subcategory="feminino_conjuntos">
+                    <img src="./img/feminino/conjuntolinho.jpg" alt="Conjuntos Femininos" class="subcategory-image">
+                    <div class="subcategory-info">
+                        <h3>Conjuntos</h3>
+                        <p>Combinações perfeitas para seu estilo</p>
+                    </div>
+                </div>
+            </div>
+            <button id="back-to-main-categories" class="back-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-arrow-left">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Voltar às Coleções
+            </button>
         </section>
 
         <section id="product-catalog" class="product-section">
             <button id="back-to-categories" class="back-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-arrow-left">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
                 Voltar às Coleções
             </button>
             <h2 class="section-title" id="catalog-title">Nossos Modelos</h2>
             <div class="product-grid" id="product-grid-container">
-                </div>
+            </div>
         </section>
     </main>
 
@@ -52,22 +92,28 @@
             <div class="modal-body">
                 <div class="modal-image-gallery">
                     <div class="modal-main-image-container">
-                        <img id="modalMainImage" src="./img/feminino/vestido-tais (1).jpg" alt="Imagem Principal do Produto"> </div>
+                        <img id="modalMainImage" src="./img/feminino/vestido-tais (1).jpg"
+                            alt="Imagem Principal do Produto">
+                    </div>
                     <div class="modal-thumbnails" id="modalThumbnails">
-                        </div>
+                    </div>
                 </div>
                 <div class="modal-product-details">
                     <h3 id="modalProductName">Nome do Produto</h3>
-                    <p id="modalProductDescription">Descrição detalhada do produto aqui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p id="modalProductDescription">Descrição detalhada do produto aqui. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
                     <h3 id="precoProduto">Preço do produto</h3>
-                    </div>
+                </div>
             </div>
         </div>
     </div>
     <footer class="main-footer-credits">
         <p class="copyright-text">&copy; 2025 | Proença's Moda - Todos os direitos reservados.</p>
-        <p class="developer-credit">Desenvolvido por: <a href="https://landingpage-vert-eight.vercel.app/" target="_blank" rel="noopener noreferrer">Eliel Filho</a></p>
+        <p class="developer-credit">Desenvolvido por: <a href="https://landingpage-vert-eight.vercel.app/"
+                target="_blank" rel="noopener noreferrer">Eliel Filho</a></p>
     </footer>
     <script src="js/script.js"></script>
 </body>
+
 </html>

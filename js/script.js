@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const productGridContainer = document.getElementById('product-grid-container');
     const backToCategoriesButton = document.getElementById('back-to-categories');
     const catalogTitle = document.getElementById('catalog-title');
+    const subcategorySection = document.getElementById('subcategory-selection');
+const backToMainCategoriesButton = document.getElementById('back-to-main-categories');
+const subcategoryCards = document.querySelectorAll('.subcategory-card');
 
     // Elementos do Modal
     const productModal = document.getElementById('productModal');
@@ -23,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 'thumbnail' é a imagem para o card no catálogo.
     // 'images' é um array: a primeira é a principal no modal, as outras são para as miniaturas.
     const productsData = {
-        feminino: [
+        feminino_vestidos: [
             {
                 id: 'fem051',
                 name: 'Vestido Paty Bordado',
@@ -166,22 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 thumbnail: './img/feminino/vestido longuete.jpg',
                 price: '169,90',
             },
-            {
-                id: 'fem041',
-                name: 'Conjunto Alça',
-                description: 'Tecido Linho com forro, tamanho único, veste até o 44, consultar cores disponíveis.',
-                images: [
-                    './img/feminino/conjuntoalça.jpg',
-                    './img/feminino/conjuntoalça2.jpg',
-                    './img/feminino/conjuntoalça3.jpg',
-                    './img/feminino/conjuntoalça4.jpg',
-                    './img/feminino/conjuntoalça5.jpg',
-                    './img/feminino/conjuntoalça6.jpg'
-
-                ],
-                thumbnail: './img/feminino/conjuntoalça.jpg',
-                price: '169,90',
-            },
+            
             {
                 id: 'fem040',
                 name: 'Vestido Prisila',
@@ -466,28 +454,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 thumbnail: './img/feminino/vestidonataliatule.jpg',
                 price: '169,90'
             },
-            {
-                id: 'fem006',
-                name: 'Conjunto Linho',
-                description: 'Tecido Linho com forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
-                images: [
-                    './img/feminino/conjuntolinho.jpg', 
-                    './img/feminino/conjuntolinho2.jpg',
-                    './img/feminino/conjuntolinho3.jpg',
-                ],
-                thumbnail: './img/feminino/conjuntolinho.jpg',
-                price: '169,90'
-            },
-            {
-                id: 'fem007',
-                name: 'Conjunto Sensorial',
-                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
-                images: [
-                    './img/feminino/conjuntosensorial.jpg',
-                ],
-                thumbnail: './img/feminino/conjuntosensorial.jpg',
-                price: 'indisponível'
-            },
+
             {
                 id: 'fem008',
                 name: 'Crepinho Liso',
@@ -499,17 +466,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 ],
                 thumbnail: './img/feminino/crepinholiso.jpg',
                 price: '119,90'
-            },
-            {
-                id: 'fem009',
-                name: 'Mula Manca Linho',
-                description: 'Saia plissada em tom metálico rosé, com comprimento midi. Uma peça statement para looks modernos e cheios de personalidade, perfeita para festas ou para adicionar um toque glam ao dia a dia.',
-                images: [
-                    './img/feminino/mulamancalinho.jpg',
-                    './img/feminino/mulamancalinho2.jpg',
-                ],
-                thumbnail: './img/feminino/mulamancalinho.jpg',
-                price: 'indisponível'
             },
             {
                 id: 'fem010',
@@ -759,11 +715,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 price: '149,90'
             },
         ],
-
-
-
-
-
             feminino_plus: [ // NOVA COLEÇÃO MODA PLUS
             {
                 id: 'fplus001',
@@ -864,28 +815,35 @@ document.addEventListener('DOMContentLoaded', () => {
                 price: '179,90',
             },
         ],
-        masculino: [
+        feminino_conjuntos: [
             {
-                id: 'masc001',
-                name: 'Camisa Polo Piquet Premium',
-                description: 'Camisa polo clássica confeccionada em algodão piquet de alta qualidade, oferecendo conforto e durabilidade. Modelagem slim fit para um visual moderno e elegante.',
+                id: 'fem006',
+                name: 'Conjunto Linho',
+                description: 'Tecido Linho com forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
-                    'https://placehold.co/650x800/A9A9A9/333?text=Polo+Premium+Original', 
-                    'https://placehold.co/100x125/A9A9A9/333?text=PP+Thumb+1',
-                    'https://placehold.co/100x125/A9A9A9/333?text=PP+Thumb+2'
+                    './img/feminino/conjuntolinho.jpg', 
+                    './img/feminino/conjuntolinho2.jpg',
+                    './img/feminino/conjuntolinho3.jpg',
                 ],
-                thumbnail: 'https://placehold.co/400x550/A9A9A9/333?text=Polo+Premium'
+                thumbnail: './img/feminino/conjuntolinho.jpg',
+                price: '169,90'
             },
             {
-                id: 'masc002',
-                name: 'Bermuda Chino Casual Confort',
-                description: 'Bermuda chino casual com corte moderno, feita em sarja de algodão com elastano para maior conforto e liberdade de movimento. Perfeita para compor looks despojados e estilosos.',
+                id: 'fem041',
+                name: 'Conjunto Alça',
+                description: 'Tecido Linho com forro, tamanho único, veste até o 44, consultar cores disponíveis.',
                 images: [
-                    'https://placehold.co/800x600/BC8F8F/333?text=Bermuda+Chino+Original', // Exemplo de imagem horizontal
-                    'https://placehold.co/125x100/BC8F8F/333?text=BC+Thumb+1', // Thumbnail correspondente
+                    './img/feminino/conjuntoalça.jpg',
+                    './img/feminino/conjuntoalça2.jpg',
+                    './img/feminino/conjuntoalça3.jpg',
+                    './img/feminino/conjuntoalça4.jpg',
+                    './img/feminino/conjuntoalça5.jpg',
+                    './img/feminino/conjuntoalça6.jpg'
+
                 ],
-                thumbnail: 'https://placehold.co/400x550/BC8F8F/333?text=Bermuda+Chino'
-            }
+                thumbnail: './img/feminino/conjuntoalça.jpg',
+                price: '169,90',
+            },
         ]
     };
 
@@ -895,17 +853,18 @@ document.addEventListener('DOMContentLoaded', () => {
      * Mostra uma seção específica e esconde as outras.
      * @param {HTMLElement} sectionToShow - A seção a ser exibida.
      */
-    function showSection(sectionToShow) {
-        // Esconde todas as seções
-        categorySection.classList.remove('active-section');
-        productCatalogSection.classList.remove('active-section');
-        
-        // Mostra a seção desejada
-        sectionToShow.classList.add('active-section');
-        
-        // Rola a página para o topo suavemente
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+function showSection(sectionToShow) {
+    // Esconde todas as seções
+    categorySection.classList.remove('active-section');
+    productCatalogSection.classList.remove('active-section');
+    subcategorySection.classList.remove('active-section');
+    
+    // Mostra a seção desejada
+    sectionToShow.classList.add('active-section');
+    
+    // Rola a página para o topo suavemente
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
     /**
      * Exibe os produtos de uma categoria específica no grid.
@@ -995,18 +954,34 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- EVENT LISTENERS ---
 
     // Event listener para os cards de categoria
-    categoryCards.forEach(card => {
-        card.addEventListener('click', () => {
-            const categoryKey = card.dataset.category;
-            if (productsData[categoryKey]) {
-                displayProducts(categoryKey);
-                showSection(productCatalogSection);
-            } else {
-                // Caso a categoria não exista nos dados (improvável com HTML fixo, mas bom ter)
-                alert('Coleção não encontrada ou indisponível no momento.');
-            }
-        });
+categoryCards.forEach(card => {
+    card.addEventListener('click', () => {
+        const categoryKey = card.dataset.category;
+        
+        if (categoryKey === 'feminino') {
+            // Mostra subcategorias para moda feminina
+            showSection(subcategorySection);
+        } else if (productsData[categoryKey]) {
+            // Mostra diretamente os produtos para outras categorias
+            displayProducts(categoryKey);
+            showSection(productCatalogSection);
+        } else {
+            alert('Coleção não encontrada ou indisponível no momento.');
+        }
     });
+});
+
+subcategoryCards.forEach(card => {
+    card.addEventListener('click', () => {
+        const subcategoryKey = card.dataset.subcategory;
+        displayProducts(subcategoryKey);
+        showSection(productCatalogSection);
+    });
+});
+
+backToMainCategoriesButton.addEventListener('click', () => {
+    showSection(categorySection);
+});
 
     // Event listener para o botão "Voltar às Coleções"
     backToCategoriesButton.addEventListener('click', () => {
