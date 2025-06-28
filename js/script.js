@@ -717,6 +717,33 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
         ],
             feminino_plus: [ // NOVA COLEÇÃO MODA PLUS
             {
+                id: 'fplus010',
+                name: 'Vestido Duna Manga Plus',
+                description: 'Tecido Duna com forro, tamanho G1 48/50, G2 52/54, G3 54/56 consultar cores disponíveis.',
+                images: [
+                    './img/feminino_plus/vestidodunamangaplus.jpg',
+                    './img/feminino_plus/vestidodunamangaplus2.jpg',
+                    './img/feminino_plus/vestidodunamangaplus3.jpg',
+                    './img/feminino_plus/vestidodunamangaplus4.jpg',
+                    './img/feminino_plus/vestidodunamangaplus5.jpg',
+                ],
+                thumbnail: './img/feminino_plus/vestidodunamangaplus.jpg', // Substitua por sua imagem
+                price: '179,90', // Exemplo de preço
+            },
+            {
+                id: 'fplus009',
+                name: 'Conjunto Malha/Lese',
+                description: 'Tecido Malha Lese, Tamanho XXG, consultar cores disponíveis.',
+                images: [
+                    './img/feminino_plus/conjuntomalhalesi.jpg',
+                    './img/feminino_plus/conjuntomalhalesi2.jpg',
+                    './img/feminino_plus/conjuntomalhalesi3.jpg',
+                    './img/feminino_plus/conjuntomalhalesi4.jpg',
+                ],
+                thumbnail: './img/feminino_plus/conjuntomalhalesi.jpg', // Substitua por sua imagem
+                price: '169,90', // Exemplo de preço
+            },
+            {
                 id: 'fplus001',
                 name: 'Chemise Plus',
                 description: 'Tecido Duna tamanho único, veste do 44 ao 54, consultar cores disponíveis.',
@@ -727,6 +754,7 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 thumbnail: './img/feminino_plus/chemiseplus.jpg', // Substitua por sua imagem
                 price: '159,90', // Exemplo de preço
             },
+
             {
                 id: 'fplus002',
                 name: 'Duna Plus Manga Longa',
@@ -843,6 +871,110 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 ],
                 thumbnail: './img/feminino/conjuntoalça.jpg',
                 price: '169,90',
+            },
+            {
+                id: 'fplus011',
+                name: 'Conjunto Malha/Lese',
+                description: 'Tecido Malha Lese, Tamanho P, M,G e GG, consultar cores disponíveis.',
+                images: [
+                    './img/feminino_plus/conjuntomalhalesi.jpg',
+                    './img/feminino_plus/conjuntomalhalesi2.jpg',
+                    './img/feminino_plus/conjuntomalhalesi3.jpg',
+                    './img/feminino_plus/conjuntomalhalesi4.jpg',
+                ],
+                thumbnail: './img/feminino_plus/conjuntomalhalesi.jpg', // Substitua por sua imagem
+                price: '169,90', // Exemplo de preço
+            },
+            {
+                id: 'fconj01',
+                name: 'Conjunto Malha Fluit',
+                description: 'Saia Tecido Malha Fluit, Camiseta Tecido viscolaicra Tamanho P, M,G e GG, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/conjuntomalhafluit.jpg',
+                    './img/feminino/conjuntomalhafluit2.jpg',
+                    './img/feminino/conjuntomalhafluit3.jpg',
+                    './img/feminino/conjuntomalhafluit4.jpg',
+                    './img/feminino/conjuntomalhafluit5.jpg',
+                ],
+                thumbnail: './img/feminino/conjuntomalhafluit.jpg', // Substitua por sua imagem
+                price: '139,90', // Exemplo de preço
+            },
+            {
+                id: 'fconj02',
+                name: 'Conjunto Ana Manga Longa',
+                description: 'Saia Tecido Ana Ruga, Camiseta Tecido viscolaicra manga longa, Tamanho P, M, G e GG, consultar cores disponíveis. ACOMPANHA O CINTO',
+                images: [
+                    './img/feminino/conjuntoanamangalonga.jpg',
+                    './img/feminino/conjuntoanamangalonga2.jpg',
+                    './img/feminino/conjuntoanamangalonga3.jpg',
+                    './img/feminino/conjuntoanamangalonga4.jpg',
+                    './img/feminino/conjuntoanamangalonga5.jpg',
+                ],
+                thumbnail: './img/feminino/conjuntoanamangalonga.jpg', // Substitua por sua imagem
+                price: '169,90', // Exemplo de preço
+            },
+            {
+                id: 'fconj03',
+                name: 'Conjunto Helena',
+                description: 'Saia tubinho tecido Ana Ruga, Camiseta Tecido viscolaicra, Tamanho P, M, G e GG, consultar cores disponíveis.   ACOMPANHA O CINTO',
+                images: [
+                    './img/feminino/conjuntohelena.jpg',
+                    './img/feminino/conjuntohelena2.jpg',
+                    './img/feminino/conjuntohelena3.jpg',
+                    './img/feminino/conjuntohelena4.jpg',
+                ],
+                thumbnail: './img/feminino/conjuntohelena.jpg', // Substitua por sua imagem
+                price: '159,90', // Exemplo de preço
+            },
+            {
+                id: 'fconj04',
+                name: 'Conjunto Duna Estampado',
+                description: 'Conjunto Duna Estampado, forrado, Tamanho P, M, G e GG, consultar cores disponíveis. ACOMPANHA O CINTO',
+                images: [
+                    './img/feminino/conjuntodunaestampado.jpg',
+                    './img/feminino/conjuntodunaestampado2.jpg',
+                    './img/feminino/conjuntodunaestampado3.jpg',
+                    './img/feminino/conjuntodunaestampado4.jpg',
+                    './img/feminino/conjuntodunaestampado5.jpg',
+                ],
+                thumbnail: './img/feminino/conjuntodunaestampado.jpg', // Substitua por sua imagem
+                price: '159,90', // Exemplo de preço
+            },
+            {
+                id: 'fconj05',
+                name: 'Conjunto Luna',
+                description: 'conjunto malha viscolaicra, saia forrada Tamanho P M G GG. ACOMPANHA O CINTO',
+                images: [
+                    './img/feminino/conjuntoluna.jpg',
+                    './img/feminino/conjuntoluna2.jpg',
+                    './img/feminino/conjuntoluna3.jpg',
+                    './img/feminino/conjuntoluna4.jpg',
+                ],
+                thumbnail: './img/feminino/conjuntoluna.jpg', // Substitua por sua imagem
+                price: '159,90', // Exemplo de preço
+            },
+            {
+                id: 'fconj06',
+                name: 'Conjunto Fenda',
+                description: 'conjunto malha ana ruga, forrado Tamanho P M G GG. ACOMPANHA O CINTO',
+                images: [
+                    './img/feminino/conjuntofenda.jpg',
+                    './img/feminino/conjuntofenda2.jpg',
+                ],
+                thumbnail: './img/feminino/conjuntofenda.jpg', // Substitua por sua imagem
+                price: '159,90', // Exemplo de preço
+            },
+            {
+                id: 'fconj07',
+                name: 'Conjunto Elen',
+                description: 'tecido malha laure, forrado Tamanho P M G GG. ACOMPANHA O CINTO',
+                images: [
+                    './img/feminino/conjuntoelen.jpg',
+                    './img/feminino/conjuntoelen2.jpg',
+                    './img/feminino/conjuntoelen3.jpg',
+                ],
+                thumbnail: './img/feminino/conjuntoelen.jpg', // Substitua por sua imagem
+                price: '169,90', // Exemplo de preço
             },
         ]
     };
