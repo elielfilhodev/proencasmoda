@@ -976,6 +976,24 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 thumbnail: './img/feminino/conjuntoelen.jpg', // Substitua por sua imagem
                 price: '169,90', // Exemplo de preço
             },
+            {
+                id: 'fconj08',
+                name: 'Conjunto Canelado Premium',
+                description: 'Tecido canelado premium, Tamanho M 38/40, G 42/44, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/conjuntocaneladopremium.jpg',
+                    './img/feminino/conjuntocaneladopremium2.jpg',
+                    './img/feminino/conjuntocaneladopremium3.jpg',
+                    './img/feminino/conjuntocaneladopremium4.jpg',
+                    './img/feminino/conjuntocaneladopremium5.jpg',
+                    './img/feminino/conjuntocaneladopremium6.jpg',
+                    './img/feminino/conjuntocaneladopremium7.jpg',
+                    './img/feminino/conjuntocaneladopremium8.jpg',
+                    './img/feminino/conjuntocaneladopremium9.jpg',
+                ],
+                thumbnail: './img/feminino/conjuntocaneladopremium.jpg', // Substitua por sua imagem
+                price: '149,90', // Exemplo de preço
+            },
         ]
     };
 
