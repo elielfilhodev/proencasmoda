@@ -627,6 +627,7 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 thumbnail: './img/feminino/vestidofloralcurto.jpg',
                 price: '99,90'
             },
+            
             {
                 id: 'fem030',
                 name: 'Vestido Floral',
@@ -644,7 +645,7 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                     './img/feminino/vestidofloral10.jpg'
                 ],
                 thumbnail: './img/feminino/vestidofloral.jpg',
-                price: '119,90'
+                price: '129,90'
             },
             {
                 id: 'fem029',
