@@ -28,6 +28,304 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
     const productsData = {
         feminino_vestidos: [
             {
+                id: 'fem072',
+                name: 'Vestido Jeans Midi',
+                description: 'Tecido Jeans com elastano, tamanho M 38/40 G 40/42 GG 42/44.',
+                images: [
+                    './img/feminino/jeansmidi.jpg',
+                    './img/feminino/jeansmidi2.jpg',
+                    './img/feminino/jeansmidi3.jpg',
+
+                ],
+                thumbnail: './img/feminino/jeansmidi.jpg',
+                price: '139,90',
+            },
+            {
+                id: 'fem071',
+                name: 'Vestido Liso Twill',
+                description: 'Tecido Twill com forro, tamanho único veste até o 44, consultar cores disponíveis',
+                images: [
+                    './img/feminino/twill.jpg',
+                    './img/feminino/twill2.jpg',
+                    './img/feminino/twill3.jpg',
+                    './img/feminino/twill4.jpg',
+                    './img/feminino/twill5.jpg',
+                    './img/feminino/twill6.jpg',
+                    './img/feminino/twill7.jpg',
+
+                ],
+                thumbnail: './img/feminino/twill.jpg',
+                price: '149,90',
+            },
+            {
+                id: 'fem070',
+                name: 'Vestido Manga Longa Duas Peças',
+                description: 'Tecido Viscolaycra duas peças, vestido acompanha sobre-tudo, tamanho único veste até o 44, consultar cores disponíveis',
+                images: [
+                    './img/feminino/mangalongaduaspecas.jpg',
+                    './img/feminino/mangalongaduaspecas2.jpg',
+                    './img/feminino/mangalongaduaspecas3.jpg',
+                    './img/feminino/mangalongaduaspecas4.jpg',
+
+                ],
+                thumbnail: './img/feminino/mangalongaduaspecas.jpg',
+                price: '139,90',
+            },
+            {
+                id: 'fem069',
+                name: 'Vestido Crepinho Manga Longa',
+                description: 'Tecido Crepinho com forro, manga longa, tamanho único veste até o 44, consultar cores disponíveis',
+                images: [
+                    './img/feminino/crepinhomangalonga.jpg',
+
+                ],
+                thumbnail: './img/feminino/crepinhomangalonga.jpg',
+                price: '119,90',
+            },
+            {
+                id: 'fem068',
+                name: 'Vestido Elisa Estampado com Cinto',
+                description: 'Tecido Duna com forro e cinto, tamanho único veste até o 44, consultar cores disponíveis',
+                images: [
+                    './img/feminino/elisaestampado.jpg',
+                    './img/feminino/elisaestampado2.jpg',
+                    './img/feminino/elisaestampado3.jpg',
+                    './img/feminino/elisaestampado4.jpg',
+                    './img/feminino/elisaestampado5.jpg',
+                    './img/feminino/elisaestampado6.jpg',
+                    './img/feminino/elisaestampado7.jpg',
+
+                ],
+                thumbnail: './img/feminino/elisaestampado.jpg',
+                price: '169,90',
+            },
+            {
+                id: 'fem067',
+                name: 'Vestido Moda Indiana',
+                description: 'Tecido 100% seda, tamanho único veste do 38 ao 46, consultar estampas disponíveis',
+                images: [
+                    './img/feminino/modaindiana.jpg',
+                    './img/feminino/modaindiana2.jpg',
+                    './img/feminino/modaindiana3.jpg',
+                    './img/feminino/modaindiana4.jpg',
+                    './img/feminino/modaindiana5.jpg',
+
+                ],
+                thumbnail: './img/feminino/modaindiana.jpg',
+                price: '179,90',
+            },
+            {
+                id: 'fem066',
+                name: 'Vestido Midi Botão e bolso',
+                description: 'Tecido Chambray, OBS: Botão NÃO funcional, tamanho único M/40 G/42 GG/44.',
+                images: [
+                    './img/feminino/botaobolso.jpg',
+                    './img/feminino/botaobolso2.jpg',
+                    './img/feminino/botaobolso3.jpg',
+                    './img/feminino/botaobolso4.jpg',
+                    './img/feminino/botaobolso5.jpg',
+
+                ],
+                thumbnail: './img/feminino/botaobolso.jpg',
+                price: '149,90',
+            },
+            {
+                id: 'fem065',
+                name: 'Vestido Plissado Laura com Cinto',
+                description: 'Tecido Crepinho acompanha o cinto, tamanho M G e GG, consultar cores disponíveis',
+                images: [
+                    './img/feminino/plissadolaura.jpg',
+                    './img/feminino/plissadolaura2.jpg',
+                    './img/feminino/plissadolaura3.jpg',
+                    './img/feminino/plissadolaura4.jpg',
+                    './img/feminino/plissadolaura5.jpg',
+                    './img/feminino/plissadolaura6.jpg',
+                    './img/feminino/plissadolaura7.jpg',
+                    './img/feminino/plissadolaura8.jpg',
+
+                ],
+                thumbnail: './img/feminino/plissadolaura.jpg',
+                price: '139,90',
+            },
+            {
+                id: 'fem064',
+                name: 'Vestido Milene Manga Longa',
+                description: 'Tecido Crepinho importado com forro, tamanho único veste até o 44, consultar cores disponíveis',
+                images: [
+                    './img/feminino/vestidomilenemangalonga.jpg',
+                    './img/feminino/vestidomilenemangalonga2.jpg',
+                    './img/feminino/vestidomilenemangalonga3.jpg',
+                    './img/feminino/vestidomilenemangalonga4.jpg',
+                    './img/feminino/vestidomilenemangalonga5.jpg',
+                    './img/feminino/vestidomilenemangalonga6.jpg',
+
+                ],
+                thumbnail: './img/feminino/vestidomilenemangalonga.jpg',
+                price: '159,90',
+            },
+            {
+                id: 'fem063',
+                name: 'Vestido Brilhante',
+                description: 'Tecido Viscomida com forro, bordado manga 3/4 brilho, tamanho único veste até o 44, consultar cores disponíveis',
+                images: [
+                    './img/feminino/vestidobrilhante.jpg',
+                    './img/feminino/vestidobrilhante2.jpg',
+                    './img/feminino/vestidobrilhante3.jpg',
+                    './img/feminino/vestidobrilhante4.jpg',
+                    './img/feminino/vestidobrilhante5.jpg',
+                    './img/feminino/vestidobrilhante6.jpg',
+                    './img/feminino/vestidobrilhante7.jpg'
+
+                ],
+                thumbnail: './img/feminino/vestidobrilhante.jpg',
+                price: '169,90',
+            },
+            {
+                id: 'fem062',
+                name: 'Vestido Regata 2 Peças',
+                description: 'Tecido ViscoLaycra, vestido regata acompanha sobre-tudo tamanho único veste até o 44, consultar cores disponíveis',
+                images: [
+                    './img/feminino/vestidoregata.jpg',
+                    './img/feminino/vestidoregata2.jpg',
+                    './img/feminino/vestidoregata3.jpg',
+
+                ],
+                thumbnail: './img/feminino/vestidoregata.jpg',
+                price: '119,90',
+            },
+            {
+                id: 'fem061',
+                name: 'Vestido Floral Midi',
+                description: 'Tecido Crepe, tamanho único veste até o 46, consultar estampas disponíveis',
+                images: [
+                    './img/feminino/vestidofloralmidi.jpg',
+                    './img/feminino/vestidofloralmidi2.jpg',
+                    './img/feminino/vestidofloralmidi3.jpg',
+                    './img/feminino/vestidofloralmidi4.jpg',
+
+                ],
+                thumbnail: './img/feminino/vestidofloralmidi.jpg',
+                price: '119,90',
+            },
+            {
+                id: 'fem060',
+                name: 'Vestido Luna Estampado',
+                description: 'Tecido duna com forro, tamanho único veste até o 44, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/vestidoluna.jpg',
+                    './img/feminino/vestidoluna2.jpg',
+                    './img/feminino/vestidoluna3.jpg',
+                    './img/feminino/vestidoluna4.jpg',
+                    './img/feminino/vestidoluna5.jpg',
+                    './img/feminino/vestidoluna6.jpg',
+                    './img/feminino/vestidoluna7.jpg',
+                    './img/feminino/vestidoluna8.jpg',
+
+                ],
+                thumbnail: './img/feminino/vestidoluna.jpg',
+                price: '159,90',
+            },
+            {
+                id: 'fem059',
+                name: 'Vestido Jeans Manga 3/4',
+                description: 'Tecido Jeans com laycra, tamanho M 38/40 G 40/42 GG 42/44.',
+                images: [
+                    './img/feminino/vestidojeansmanga.jpg',
+                    './img/feminino/vestidojeansmanga2.jpg',
+                    './img/feminino/vestidojeansmanga3.jpg',
+
+                ],
+                thumbnail: './img/feminino/vestidojeansmanga.jpg',
+                price: '149,90',
+            },
+            {
+                id: 'fem058',
+                name: 'Vestido Chambre',
+                description: 'Tecido Chambre em gola V, tamanho único M 38/40 G 40/42 GG 42/44.',
+                images: [
+                    './img/feminino/vestidochambre.jpg',
+                    './img/feminino/vestidochambre2.jpg',
+                    './img/feminino/vestidochambre3.jpg',
+                    './img/feminino/vestidochambre4.jpg',
+
+                ],
+                thumbnail: './img/feminino/vestidochambre.jpg',
+                price: '139,90',
+            },
+            {
+                id: 'fem057',
+                name: 'Vestido Laço Ombro',
+                description: 'Tecido Linho Duna com forro, tamanho único veste até o 44, consultar cores disponíveis',
+                images: [
+                    './img/feminino/vestidolacoombro.jpg',
+                    './img/feminino/vestidolacoombro2.jpg',
+
+                ],
+                thumbnail: './img/feminino/vestidolacoombro.jpg',
+                price: '149,90',
+            },
+            {
+                id: 'fem056',
+                name: 'Vestido Lese Midi',
+                description: 'Tecido Algodão/Lese forrado, tamanho único veste até o 44, consultar cores disponíveis',
+                images: [
+                    './img/feminino/vestidolesimidi.jpg',
+                    './img/feminino/vestidolesimidi2.jpg',
+
+                ],
+                thumbnail: './img/feminino/vestidolesimidi.jpg',
+                price: '189,90',
+            },
+            {
+                id: 'fem055',
+                name: 'Vestido Luana Manga Longa',
+                description: 'Tecido Duna com forro, estampado e botões funcionais, tamanho único veste até o 44, consultar cores disponíveis',
+                images: [
+                    './img/feminino/vestidoluanamangalonga.jpg',
+
+                ],
+                thumbnail: './img/feminino/vestidoluanamangalonga.jpg',
+                price: '169,90',
+            },
+            {
+                id: 'fem054',
+                name: 'Vestido Camponesa',
+                description: 'Tecido Viscolinho com forro, manga longa, tamanho único veste até o 44, consultar cores disponíveis',
+                images: [
+                    './img/feminino/vestidocamponesa.jpg',
+
+                ],
+                thumbnail: './img/feminino/vestidocamponesa.jpg',
+                price: '119,90',
+            },
+            {
+                id: 'fem053',
+                name: 'Vestido Jade',
+                description: 'Tecido Viscolinho, tamanho único veste até o 44, consultar cores disponíveis',
+                images: [
+                    './img/feminino/vestidojade.jpg',
+                    './img/feminino/vestidojade2.jpg',
+                    './img/feminino/vestidojade3.jpg',
+                    './img/feminino/vestidojade4.jpg',
+                    './img/feminino/vestidojade5.jpg',
+                    './img/feminino/vestidojade6.jpg'
+
+                ],
+                thumbnail: './img/feminino/vestidojade.jpg',
+                price: '159,90',
+            },
+            {
+                id: 'fem052',
+                name: 'Vestido Brilho',
+                description: 'Tecido Viscomida com forro, bordado com brilho, tamanho único veste até o 44, consultar cores disponíveis',
+                images: [
+                    './img/feminino/vestidobrilho.jpg'
+
+                ],
+                thumbnail: './img/feminino/vestidobrilho.jpg',
+                price: '169,90',
+            },
+            {
                 id: 'fem051',
                 name: 'Vestido Paty Bordado',
                 description: 'Tecido Viscomida bordado com forro, tamanho único veste até o 44, consultar cores disponíveis',
@@ -450,6 +748,13 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 images: [
                     './img/feminino/vestidonataliatule.jpg', 
                     './img/feminino/vestidonataliatule2.jpg',
+                    './img/feminino/natalia.jpg',
+                    './img/feminino/natalia2.jpg',
+                    './img/feminino/natalia3.jpg',
+                    './img/feminino/natalia4.jpg',
+                    './img/feminino/natalia5.jpg',
+                    './img/feminino/natalia6.jpg',
+                    './img/feminino/natalia7.jpg',
                 ],
                 thumbnail: './img/feminino/vestidonataliatule.jpg',
                 price: '169,90'
