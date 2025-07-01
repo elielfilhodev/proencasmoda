@@ -627,7 +627,7 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 thumbnail: './img/feminino/vestidofloralcurto.jpg',
                 price: '99,90'
             },
-            
+
             {
                 id: 'fem030',
                 name: 'Vestido Floral',
@@ -1463,4 +1463,46 @@ backToMainCategoriesButton.addEventListener('click', () => {
 
     // Inicia a página mostrando a seção de categorias
     showSection(categorySection);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const carouselTrack = document.querySelector('.carousel-track');
+  const slides = document.querySelectorAll('.carousel-slide');
+  
+  // Duplica os slides para efeito infinito contínuo
+  function duplicateSlides() {
+    const slidesArray = Array.from(slides);
+    const firstFourSlides = slidesArray.slice(0, 4);
+    
+    firstFourSlides.forEach(slide => {
+      const clone = slide.cloneNode(true);
+      carouselTrack.appendChild(clone);
+    });
+  }
+  
+  // Verifica se precisa duplicar (caso o JavaScript esteja ativo)
+  if (slides.length < 8) {
+    duplicateSlides();
+  }
+  
+  // Pausa animação no hover
+  carouselTrack.addEventListener('mouseenter', () => {
+    carouselTrack.style.animationPlayState = 'paused';
+  });
+  
+  carouselTrack.addEventListener('mouseleave', () => {
+    carouselTrack.style.animationPlayState = 'running';
+  });
+  
+  // Efeito de interação com os slides
+  const allSlides = document.querySelectorAll('.carousel-slide');
+  allSlides.forEach(slide => {
+    slide.addEventListener('mouseenter', () => {
+      slide.querySelector('.carousel-text').style.transform = 'scale(1.05)';
+    });
+    
+    slide.addEventListener('mouseleave', () => {
+      slide.querySelector('.carousel-text').style.transform = 'scale(1)';
+    });
+  });
 });
