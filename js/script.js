@@ -22,11 +22,127 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
     let currentProducts = []; // Armazena os produtos da categoria atualmente visualizada
 
     // --- DADOS DE EXEMPLO DOS PRODUTOS ---
-    // Substitua estes dados pelos seus produtos reais.
-    // 'thumbnail' é a imagem para o card no catálogo.
-    // 'images' é um array: a primeira é a principal no modal, as outras são para as miniaturas.
     const productsData = {
         feminino_vestidos: [
+                        {
+                id: 'fem081',
+                name: 'Short Segunda Pele',
+                description: 'Tecido microfibra, tamanho P, M, G, GG e PLUS.',
+                images: [
+                    './img/feminino/short.jpg',
+                    './img/feminino/short2.jpg',
+                    './img/feminino/short3.jpg',
+
+                ],
+                thumbnail: './img/feminino/short.jpg',
+                price: '29,90',
+            },
+            {
+                id: 'fem080',
+                name: 'Vestido Joice 3/4',
+                description: 'Tecido Duna, com forro, tamanho único veste até o 44, manga 3/4, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/joice.jpg',
+
+                ],
+                thumbnail: './img/feminino/joice.jpg',
+                price: '159,90',
+            },
+            {
+                id: 'fem079',
+                name: 'Vestido Maytê 3/4',
+                description: 'Tecido Duna com forro, tamanho único veste até o 44, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/mayte.jpg',
+
+                ],
+                thumbnail: './img/feminino/mayte.jpg',
+                price: '159,90',
+            },
+            {
+                id: 'fem078',
+                name: 'Vestido Vitória',
+                description: 'Tecido Linho duna, com forro e bolso, tamanho único veste até o 44, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/vitoria.jpg',
+                    './img/feminino/vitoria2.jpg',
+                    './img/feminino/vitoria3.jpg',
+                    './img/feminino/vitoria4.jpg',
+                    './img/feminino/vitoria5.jpg',
+
+                ],
+                thumbnail: './img/feminino/vitoria.jpg',
+                price: '139,90',
+            },
+            {
+                id: 'fem077',
+                name: 'Vestido Lucy',
+                description: 'Tecido Linho com forro acompanha cinto, tamanho úico, veste até o 44, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/lucy.jpg',
+                    './img/feminino/lucy2.jpg',
+                    './img/feminino/lucy3.jpg',
+                    './img/feminino/lucy4.jpg',
+                    './img/feminino/lucy5.jpg',
+
+                ],
+                thumbnail: './img/feminino/lucy.jpg',
+                price: '159,90',
+            },
+            {
+                id: 'fem076',
+                name: 'Conjunto Samira',
+                description: 'Tecido Viscolinho importado, tamanho único, veste até o 44, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/samira.jpg',
+                    './img/feminino/samira2.jpg',
+                    './img/feminino/samira3.jpg',
+
+                ],
+                thumbnail: './img/feminino/samira.jpg',
+                price: '159,90',
+            },
+            {
+                id: 'fem075',
+                name: 'Vestido Jamille',
+                description: 'Tecido Duna com forro, tamanho único veste até o 44 OBS: Sem cinto, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/jamile.jpg',
+                    './img/feminino/jamile2.jpg',
+                    './img/feminino/jamile3.jpg',
+                    './img/feminino/jamile4.jpg',
+                    './img/feminino/jamile5.jpg',
+
+                ],
+                thumbnail: './img/feminino/jamile.jpg',
+                price: '139,90',
+            },
+            {
+                id: 'fem074',
+                name: 'Vestido Suzy',
+                description: 'Vestido de alça com bojo, tecido viscolinho com forro, tamanho único veste até o 44, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/susy.jpg',
+
+                ],
+                thumbnail: './img/feminino/susy.jpg',
+                price: '159,90',
+            },
+            {
+                id: 'fem073',
+                name: 'Chamise Linho Importado',
+                description: 'Chamise tecido linho importado, tamanho único, veste até o 46, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/chamiselinhoimportado.jpg',
+                    './img/feminino/chamiselinhoimportado2.jpg',
+                    './img/feminino/chamiselinhoimportado3.jpg',
+                    './img/feminino/chamiselinhoimportado4.jpg',
+                    './img/feminino/chamiselinhoimportado5.jpg',
+
+                ],
+                thumbnail: './img/feminino/chamiselinhoimportado.jpg',
+                price: '169,90',
+            },
             {
                 id: 'fem072',
                 name: 'Vestido Jeans Midi',
@@ -1023,6 +1139,79 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
         ],
             feminino_plus: [ // NOVA COLEÇÃO MODA PLUS
             {
+                id: 'fplus015',
+                name: 'Vestido Alfaiataria Plus',
+                description: 'Vestido Alfaiataria, botão funcional, ajuste na cintura, tamanho único veste do 44 ao 52, consultar cores disponíveis.',
+                images: [
+                    './img/feminino_plus/alfaiataria.jpg',
+                    './img/feminino_plus/alfaiataria2.jpg',
+                    './img/feminino_plus/alfaiataria3.jpg',
+                    './img/feminino_plus/alfaiataria4.jpg',
+                    './img/feminino_plus/alfaiataria5.jpg',
+                ],
+                thumbnail: './img/feminino_plus/alfaiataria.jpg',
+                price: '179,90',
+            },
+            {
+                id: 'fplus014',
+                name: 'Vestido Evelyn Plus',
+                description: 'Tecido em linho, vestido plus botão, tamanho único plus, 48/50/52, consultar cores disponíveis.',
+                images: [
+                    './img/feminino_plus/evelynn.jpg',
+                    './img/feminino_plus/evelynn2.jpg',
+                    './img/feminino_plus/evelynn3.jpg',
+                    './img/feminino_plus/evelynn4.jpg'
+                ],
+                thumbnail: './img/feminino_plus/evelynn.jpg',
+                price: '179,90',
+            },
+            {
+                id: 'fplus013',
+                name: 'Vestido Soraia Bordado Plus',
+                description: 'Tecido Viscomida, Bordado, com forro, tamanho único veste do 44 ao 48/50, consultar cores disponíveis.',
+                images: [
+                    './img/feminino_plus/soraia.jpg',
+                    './img/feminino_plus/soraia2.jpg',
+                    './img/feminino_plus/soraia3.jpg',
+                    './img/feminino_plus/soraia4.jpg',
+                    './img/feminino_plus/soraia5.jpg',
+                    './img/feminino_plus/soraia6.jpg',
+                    './img/feminino_plus/soraia7.jpg',
+                ],
+                thumbnail: './img/feminino_plus/soraia.jpg',
+                price: '169,90',
+            },
+            {
+                id: 'fplus012',
+                name: 'Short Segunda Pele',
+                description: 'Tecido microfibra, tamanho P, M, G, GG e PLUS.',
+                images: [
+                    './img/feminino/short.jpg',
+                    './img/feminino/short2.jpg',
+                    './img/feminino/short3.jpg',
+
+                ],
+                thumbnail: './img/feminino/short.jpg',
+                price: '29,90',
+            },
+            {
+                id: 'fplus011',
+                name: 'Vestido Katarina Bordado PLUS',
+                description: 'Tecido Viscomida Bordado com forro, veste até 48, consultar cores disponíveis.',
+                images: [
+                    './img/feminino_plus/katarina.jpg',
+                    './img/feminino_plus/katarina2.jpg',
+                    './img/feminino_plus/katarina3.jpg',
+                    './img/feminino_plus/katarina5.jpg',
+                    './img/feminino_plus/katarina6.jpg',
+                    './img/feminino_plus/katarina7.jpg',
+                    './img/feminino_plus/katarina8.jpg',
+                    './img/feminino_plus/katarina9.jpg',
+                ],
+                thumbnail: './img/feminino_plus/katarina.jpg', 
+                price: '169,90', 
+            },
+            {
                 id: 'fplus010',
                 name: 'Vestido Duna Manga Plus',
                 description: 'Tecido Duna com forro, tamanho G1 48/50, G2 52/54, G3 54/56 consultar cores disponíveis.',
@@ -1502,7 +1691,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     slide.addEventListener('mouseleave', () => {
-      slide.querySelector('.carousel-text').style.transform = 'scale(1)';
+    slide.querySelector('.carousel-text').style.transform = 'scale(1)';
     });
-  });
+    });
 });
