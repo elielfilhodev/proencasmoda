@@ -26,7 +26,7 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
         feminino_vestidos: [
             {
                 id: 'fem086',
-                name: 'Vestido Nanda Regata',
+                name: 'Vestido Linho Manga Princesa',
                 description: 'Tecido linho/duna, com forro e bolso, tamanho único veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/linhomangaprincesa.jpg',
