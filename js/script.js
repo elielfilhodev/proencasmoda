@@ -24,7 +24,71 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
     // --- DADOS DE EXEMPLO DOS PRODUTOS ---
     const productsData = {
         feminino_vestidos: [
-                        {
+            {
+                id: 'fem086',
+                name: 'Vestido Nanda Regata',
+                description: 'Tecido linho/duna, com forro e bolso, tamanho único veste até o 44, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/linhomangaprincesa.jpg',
+                    './img/feminino/linhomangaprincesa2.jpg',
+
+                ],
+                thumbnail: './img/feminino/linhomangaprincesa.jpg',
+                price: '159,90',
+            },
+            {
+                id: 'fem085',
+                name: 'Vestido Nanda Regata',
+                description: 'Tecido Crepinho duna, com forro, tamanho único veste até o 46, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/nandaregata.jpg',
+                    './img/feminino/nandaregata2.jpg',
+                    './img/feminino/nandaregata3.jpg',
+                    './img/feminino/nandaregata4.jpg',
+                    './img/feminino/nandaregata5.jpg',
+                    './img/feminino/nandaregata6.jpg',
+
+                ],
+                thumbnail: './img/feminino/nandaregata.jpg',
+                price: '159,90',
+            },
+            {
+                id: 'fem084',
+                name: 'Vestido Duna Manga 3/4',
+                description: 'Tecido Duna, com forro, tamanho único veste até o 44, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/dunamanga34.jpg',
+                    './img/feminino/dunamanga342.jpg',
+                    './img/feminino/dunamanga343.jpg'
+
+                ],
+                thumbnail: './img/feminino/dunamanga34.jpg',
+                price: '149,90',
+            },
+            {
+                id: 'fem083',
+                name: 'Vestido Joice Bordado',
+                description: 'Tecido Viscomida, com forro. BORDADO tamanho único veste até o 44, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/joicebordado.jpg',
+
+                ],
+                thumbnail: './img/feminino/joicebordado.jpg',
+                price: '159,90',
+            },
+            {
+                id: 'fem082',
+                name: 'Duna Bordado',
+                description: 'Tecido Duna, com forro. BORDADO tamanho único veste até o 44, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/dunabordado.jpg',
+                    './img/feminino/dunabordado2.jpg',
+
+                ],
+                thumbnail: './img/feminino/dunabordado.jpg',
+                price: '159,90',
+            },
+            {
                 id: 'fem081',
                 name: 'Short Segunda Pele',
                 description: 'Tecido microfibra, tamanho P, M, G, GG e PLUS.',
@@ -36,28 +100,6 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 ],
                 thumbnail: './img/feminino/short.jpg',
                 price: '29,90',
-            },
-            {
-                id: 'fem080',
-                name: 'Vestido Joice 3/4',
-                description: 'Tecido Duna, com forro, tamanho único veste até o 44, manga 3/4, consultar cores disponíveis.',
-                images: [
-                    './img/feminino/joice.jpg',
-
-                ],
-                thumbnail: './img/feminino/joice.jpg',
-                price: '159,90',
-            },
-            {
-                id: 'fem079',
-                name: 'Vestido Maytê 3/4',
-                description: 'Tecido Duna com forro, tamanho único veste até o 44, consultar cores disponíveis.',
-                images: [
-                    './img/feminino/mayte.jpg',
-
-                ],
-                thumbnail: './img/feminino/mayte.jpg',
-                price: '159,90',
             },
             {
                 id: 'fem078',
@@ -90,19 +132,6 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 price: '159,90',
             },
             {
-                id: 'fem076',
-                name: 'Conjunto Samira',
-                description: 'Tecido Viscolinho importado, tamanho único, veste até o 44, consultar cores disponíveis.',
-                images: [
-                    './img/feminino/samira.jpg',
-                    './img/feminino/samira2.jpg',
-                    './img/feminino/samira3.jpg',
-
-                ],
-                thumbnail: './img/feminino/samira.jpg',
-                price: '159,90',
-            },
-            {
                 id: 'fem075',
                 name: 'Vestido Jamille',
                 description: 'Tecido Duna com forro, tamanho único veste até o 44 OBS: Sem cinto, consultar cores disponíveis.',
@@ -116,17 +145,6 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 ],
                 thumbnail: './img/feminino/jamile.jpg',
                 price: '139,90',
-            },
-            {
-                id: 'fem074',
-                name: 'Vestido Suzy',
-                description: 'Vestido de alça com bojo, tecido viscolinho com forro, tamanho único veste até o 44, consultar cores disponíveis.',
-                images: [
-                    './img/feminino/susy.jpg',
-
-                ],
-                thumbnail: './img/feminino/susy.jpg',
-                price: '159,90',
             },
             {
                 id: 'fem073',
@@ -155,23 +173,6 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 ],
                 thumbnail: './img/feminino/jeansmidi.jpg',
                 price: '139,90',
-            },
-            {
-                id: 'fem071',
-                name: 'Vestido Liso Twill',
-                description: 'Tecido Twill com forro, tamanho único veste até o 44, consultar cores disponíveis',
-                images: [
-                    './img/feminino/twill.jpg',
-                    './img/feminino/twill2.jpg',
-                    './img/feminino/twill3.jpg',
-                    './img/feminino/twill4.jpg',
-                    './img/feminino/twill5.jpg',
-                    './img/feminino/twill6.jpg',
-                    './img/feminino/twill7.jpg',
-
-                ],
-                thumbnail: './img/feminino/twill.jpg',
-                price: '149,90',
             },
             {
                 id: 'fem070',
@@ -214,21 +215,6 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 ],
                 thumbnail: './img/feminino/elisaestampado.jpg',
                 price: '169,90',
-            },
-            {
-                id: 'fem067',
-                name: 'Vestido Moda Indiana',
-                description: 'Tecido 100% seda, tamanho único veste do 38 ao 46, consultar estampas disponíveis',
-                images: [
-                    './img/feminino/modaindiana.jpg',
-                    './img/feminino/modaindiana2.jpg',
-                    './img/feminino/modaindiana3.jpg',
-                    './img/feminino/modaindiana4.jpg',
-                    './img/feminino/modaindiana5.jpg',
-
-                ],
-                thumbnail: './img/feminino/modaindiana.jpg',
-                price: '179,90',
             },
             {
                 id: 'fem066',
@@ -325,7 +311,7 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
             },
             {
                 id: 'fem060',
-                name: 'Vestido Luna Estampado',
+                name: 'Vestido Duna Estampado',
                 description: 'Tecido duna com forro, tamanho único veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/vestidoluna.jpg',
@@ -381,29 +367,6 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 price: '149,90',
             },
             {
-                id: 'fem056',
-                name: 'Vestido Lese Midi',
-                description: 'Tecido Algodão/Lese forrado, tamanho único veste até o 44, consultar cores disponíveis',
-                images: [
-                    './img/feminino/vestidolesimidi.jpg',
-                    './img/feminino/vestidolesimidi2.jpg',
-
-                ],
-                thumbnail: './img/feminino/vestidolesimidi.jpg',
-                price: '189,90',
-            },
-            {
-                id: 'fem055',
-                name: 'Vestido Luana Manga Longa',
-                description: 'Tecido Duna com forro, estampado e botões funcionais, tamanho único veste até o 44, consultar cores disponíveis',
-                images: [
-                    './img/feminino/vestidoluanamangalonga.jpg',
-
-                ],
-                thumbnail: './img/feminino/vestidoluanamangalonga.jpg',
-                price: '169,90',
-            },
-            {
                 id: 'fem054',
                 name: 'Vestido Camponesa',
                 description: 'Tecido Viscolinho com forro, manga longa, tamanho único veste até o 44, consultar cores disponíveis',
@@ -413,22 +376,6 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 ],
                 thumbnail: './img/feminino/vestidocamponesa.jpg',
                 price: '119,90',
-            },
-            {
-                id: 'fem053',
-                name: 'Vestido Jade',
-                description: 'Tecido Viscolinho, tamanho único veste até o 44, consultar cores disponíveis',
-                images: [
-                    './img/feminino/vestidojade.jpg',
-                    './img/feminino/vestidojade2.jpg',
-                    './img/feminino/vestidojade3.jpg',
-                    './img/feminino/vestidojade4.jpg',
-                    './img/feminino/vestidojade5.jpg',
-                    './img/feminino/vestidojade6.jpg'
-
-                ],
-                thumbnail: './img/feminino/vestidojade.jpg',
-                price: '159,90',
             },
             {
                 id: 'fem052',
@@ -618,25 +565,6 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 price: '119,90'
             },
             {
-                id: 'fem038',
-                name: 'Vestido Lívia',
-                description: 'Vestido Midi, tecido linho duna, com forro, veste até o 44, consultar cores disponíveis.',
-                images: [
-                    './img/feminino/vestidolivia.jpg',
-                    './img/feminino/vestidolivia2.jpg',
-                    './img/feminino/vestidolivia3.jpg',
-                    './img/feminino/vestidolivia4.jpg',
-                    './img/feminino/vestidolivia5.jpg',
-                    './img/feminino/vestidolivia6.jpg',
-                    './img/feminino/vestidolivia7.jpg',
-                    './img/feminino/vestidolivia8.jpg',
-                    './img/feminino/vestidolivia9.jpg',
-
-                ],
-                thumbnail: './img/feminino/vestidolivia.jpg',
-                price: '129,90'
-            },
-            {
                 id: 'fem037',
                 name: 'Vestido Linho Duna Duas Mangas',
                 description: 'Vestido Linho Duna, duas manguinhas, tecido linho com forro e bolso, veste até o 44, consiltar cores disponíveis.',
@@ -764,20 +692,6 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 price: '129,90'
             },
             {
-                id: 'fem029',
-                name: 'Saia Courino',
-                description: 'Saia em courino, tamanho ÚNICO veste até o 46, consultar cores disponíveis.',
-                images: [
-                    './img/feminino/saiacourino.jpg',
-                    './img/feminino/saiacourino2.jpg',
-                    './img/feminino/saiacourino3.jpg',
-                    './img/feminino/saiacourino4.jpg',
-                    './img/feminino/saiacourino5.jpg',
-                ],
-                thumbnail: './img/feminino/saiacourino.jpg',
-                price: '119,90'
-            },
-            {
                 id: 'fem028',
                 name: 'Cardigan de Lã',
                 description: 'Cardigan tecido em lã macia, tamanho ÚNICO veste até o 40,42,44, consultar cores disponíveis. Perfeito para aquecer e complementar looks de outono e inverno.',
@@ -821,18 +735,6 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 price: '129,90'
             },
             {
-                id: 'fem002',
-                name: 'Vestido Curto Plissado',
-                description: 'Tecido crepinho forrado, tamanho ÚNICO veste até o 44, consultar cores disponíveis.',
-                images: [
-                    './img/feminino/vestidocurtoplissado.jpg',
-                    './img/feminino/vestidocurtoplissado2.jpg',
-                    './img/feminino/vestidocurtoplissado3.jpg'
-                ],
-                thumbnail: './img/feminino/vestidocurtoplissado.jpg',
-                price: '99,90'
-            },
-            {
                 id: 'fem003',
                 name: 'Vestido Jéssica',
                 description: 'Linho Tamanho ÚNICO, veste até o 44, consultar cores disponíveis. Tecido Linho/Duna com forro e bolso',
@@ -842,21 +744,6 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 ],
                 thumbnail: './img/feminino/vestidojessica.jpg',
                 price: '159,90'
-            },
-            {
-                id: 'fem004',
-                name: 'Vestido Lese Midi',
-                description: 'Lese Midi, tamanho ÚNICO veste até o 44, tecido algodão/lese, com forro.',
-                images: [
-                    './img/feminino/vestidolesimid.jpg', 
-                    './img/feminino/vestidolesimid2.jpg',
-                    './img/feminino/vestidolesimid3.jpg',
-                    './img/feminino/vestidolesi4.jpg',
-                    './img/feminino/vestidolesi5.jpg',
-                    './img/feminino/vestidolesi6.jpg'
-                ],
-                thumbnail: './img/feminino/vestidolesimid.jpg',
-                price: '179,90'
             },
             {
                 id: 'fem005',
@@ -931,21 +818,6 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 price: '149,90'
             },
             {
-                id: 'fem013',
-                name: 'Vestido Carol 3 Marias',
-                description: 'Vestido Carol 3 marias, manga longa, tecido duna com forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
-                images: [
-                    './img/feminino/vestidocarol3marias.jpg',
-                    './img/feminino/vestidocarol3marias2.jpg',
-                    './img/feminino/vestidocarol3marias3.jpg',
-                    './img/feminino/vestidocarol3marias4.jpg',
-                    './img/feminino/vestidocarol3marias5.jpg',
-                    './img/feminino/vestidocarol3marias6.jpg'
-                ],
-                thumbnail: './img/feminino/vestidocarol3marias.jpg',
-                price: '169,90'
-            },
-            {
                 id: 'fem014',
                 name: 'Vestido Cris Midi',
                 description: 'Vestido midi cris, tecido crepinho importado com forro, botão funcional, tamanho ÚNICO 38 ao 44 consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
@@ -958,34 +830,6 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 ],
                 thumbnail: './img/feminino/vestidocrismidi.jpg',
                 price: '159,90'
-            },
-            {
-                id: 'fem015',
-                name: 'Vestido Curto com Alça',
-                description: 'Tecido crepinho sem forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
-                images: [
-                    './img/feminino/vestidocurtoalca3.jpg',
-                    './img/feminino/vestidocurtoalca.jpg',
-                    './img/feminino/vestidocurtoalca2.jpg',
-                    
-                ],
-                thumbnail: './img/feminino/vestidocurtoalca3.jpg',
-                price: '79,90'
-            },
-            {
-                id: 'fem016',
-                name: 'Vestido Denise',
-                description: 'Vestido Midi Denise, tecido duna amassado com forro, tamanho ÚNICO veste até o 38,40,42,44 consultar cores disponíveis.',
-                images: [
-                    './img/feminino/vestidodenise.jpg',
-                    './img/feminino/vestidodenise2.jpg',
-                    './img/feminino/vestidodenise3.jpg',
-                    './img/feminino/vestidodenise4.jpg',
-                    './img/feminino/vestidodenise5.jpg',
-                    './img/feminino/vestidodenise6.jpg'
-                ],
-                thumbnail: './img/feminino/vestidodenise.jpg',
-                price: '149,90'
             },
             {
                 id: 'fem017',
@@ -1226,19 +1070,6 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 price: '179,90', // Exemplo de preço
             },
             {
-                id: 'fplus009',
-                name: 'Conjunto Malha/Lese',
-                description: 'Tecido Malha Lese, Tamanho XXG, consultar cores disponíveis.',
-                images: [
-                    './img/feminino_plus/conjuntomalhalesi.jpg',
-                    './img/feminino_plus/conjuntomalhalesi2.jpg',
-                    './img/feminino_plus/conjuntomalhalesi3.jpg',
-                    './img/feminino_plus/conjuntomalhalesi4.jpg',
-                ],
-                thumbnail: './img/feminino_plus/conjuntomalhalesi.jpg', // Substitua por sua imagem
-                price: '169,90', // Exemplo de preço
-            },
-            {
                 id: 'fplus001',
                 name: 'Chemise Plus',
                 description: 'Tecido Duna tamanho único, veste do 44 ao 54, consultar cores disponíveis.',
@@ -1366,110 +1197,6 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 ],
                 thumbnail: './img/feminino/conjuntoalça.jpg',
                 price: '169,90',
-            },
-            {
-                id: 'fplus011',
-                name: 'Conjunto Malha/Lese',
-                description: 'Tecido Malha Lese, Tamanho P, M,G e GG, consultar cores disponíveis.',
-                images: [
-                    './img/feminino_plus/conjuntomalhalesi.jpg',
-                    './img/feminino_plus/conjuntomalhalesi2.jpg',
-                    './img/feminino_plus/conjuntomalhalesi3.jpg',
-                    './img/feminino_plus/conjuntomalhalesi4.jpg',
-                ],
-                thumbnail: './img/feminino_plus/conjuntomalhalesi.jpg', // Substitua por sua imagem
-                price: '169,90', // Exemplo de preço
-            },
-            {
-                id: 'fconj01',
-                name: 'Conjunto Malha Fluit',
-                description: 'Saia Tecido Malha Fluit, Camiseta Tecido viscolaicra Tamanho P, M,G e GG, consultar cores disponíveis.',
-                images: [
-                    './img/feminino/conjuntomalhafluit.jpg',
-                    './img/feminino/conjuntomalhafluit2.jpg',
-                    './img/feminino/conjuntomalhafluit3.jpg',
-                    './img/feminino/conjuntomalhafluit4.jpg',
-                    './img/feminino/conjuntomalhafluit5.jpg',
-                ],
-                thumbnail: './img/feminino/conjuntomalhafluit.jpg', // Substitua por sua imagem
-                price: '139,90', // Exemplo de preço
-            },
-            {
-                id: 'fconj02',
-                name: 'Conjunto Ana Manga Longa',
-                description: 'Saia Tecido Ana Ruga, Camiseta Tecido viscolaicra manga longa, Tamanho P, M, G e GG, consultar cores disponíveis. ACOMPANHA O CINTO',
-                images: [
-                    './img/feminino/conjuntoanamangalonga.jpg',
-                    './img/feminino/conjuntoanamangalonga2.jpg',
-                    './img/feminino/conjuntoanamangalonga3.jpg',
-                    './img/feminino/conjuntoanamangalonga4.jpg',
-                    './img/feminino/conjuntoanamangalonga5.jpg',
-                ],
-                thumbnail: './img/feminino/conjuntoanamangalonga.jpg', // Substitua por sua imagem
-                price: '169,90', // Exemplo de preço
-            },
-            {
-                id: 'fconj03',
-                name: 'Conjunto Helena',
-                description: 'Saia tubinho tecido Ana Ruga, Camiseta Tecido viscolaicra, Tamanho P, M, G e GG, consultar cores disponíveis.   ACOMPANHA O CINTO',
-                images: [
-                    './img/feminino/conjuntohelena.jpg',
-                    './img/feminino/conjuntohelena2.jpg',
-                    './img/feminino/conjuntohelena3.jpg',
-                    './img/feminino/conjuntohelena4.jpg',
-                ],
-                thumbnail: './img/feminino/conjuntohelena.jpg', // Substitua por sua imagem
-                price: '159,90', // Exemplo de preço
-            },
-            {
-                id: 'fconj04',
-                name: 'Conjunto Duna Estampado',
-                description: 'Conjunto Duna Estampado, forrado, Tamanho P, M, G e GG, consultar cores disponíveis. ACOMPANHA O CINTO',
-                images: [
-                    './img/feminino/conjuntodunaestampado.jpg',
-                    './img/feminino/conjuntodunaestampado2.jpg',
-                    './img/feminino/conjuntodunaestampado3.jpg',
-                    './img/feminino/conjuntodunaestampado4.jpg',
-                    './img/feminino/conjuntodunaestampado5.jpg',
-                ],
-                thumbnail: './img/feminino/conjuntodunaestampado.jpg', // Substitua por sua imagem
-                price: '159,90', // Exemplo de preço
-            },
-            {
-                id: 'fconj05',
-                name: 'Conjunto Luna',
-                description: 'conjunto malha viscolaicra, saia forrada Tamanho P M G GG. ACOMPANHA O CINTO',
-                images: [
-                    './img/feminino/conjuntoluna.jpg',
-                    './img/feminino/conjuntoluna2.jpg',
-                    './img/feminino/conjuntoluna3.jpg',
-                    './img/feminino/conjuntoluna4.jpg',
-                ],
-                thumbnail: './img/feminino/conjuntoluna.jpg', // Substitua por sua imagem
-                price: '159,90', // Exemplo de preço
-            },
-            {
-                id: 'fconj06',
-                name: 'Conjunto Fenda',
-                description: 'conjunto malha ana ruga, forrado Tamanho P M G GG. ACOMPANHA O CINTO',
-                images: [
-                    './img/feminino/conjuntofenda.jpg',
-                    './img/feminino/conjuntofenda2.jpg',
-                ],
-                thumbnail: './img/feminino/conjuntofenda.jpg', // Substitua por sua imagem
-                price: '159,90', // Exemplo de preço
-            },
-            {
-                id: 'fconj07',
-                name: 'Conjunto Elen',
-                description: 'tecido malha laure, forrado Tamanho P M G GG. ACOMPANHA O CINTO',
-                images: [
-                    './img/feminino/conjuntoelen.jpg',
-                    './img/feminino/conjuntoelen2.jpg',
-                    './img/feminino/conjuntoelen3.jpg',
-                ],
-                thumbnail: './img/feminino/conjuntoelen.jpg', // Substitua por sua imagem
-                price: '169,90', // Exemplo de preço
             },
             {
                 id: 'fconj08',
