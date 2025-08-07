@@ -696,7 +696,7 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 name: 'Cardigan de Lã',
                 description: 'Cardigan tecido em lã macia, tamanho ÚNICO veste até o 40,42,44, consultar cores disponíveis. Perfeito para aquecer e complementar looks de outono e inverno.',
                 images: [
-                    './img/feminino/cardigandela',
+                    './img/feminino/cardigandela.jpg',
                     './img/feminino/cardigandela2.jpg',
                     './img/feminino/cardigandela3.jpg',
                     './img/feminino/cardigandela4.jpg',
@@ -1187,15 +1187,16 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 name: 'Conjunto Alça',
                 description: 'Tecido Linho com forro, tamanho único, veste até o 44, consultar cores disponíveis.',
                 images: [
-                    './img/feminino/conjuntoalça.jpg',
                     './img/feminino/conjuntoalça2.jpg',
+                    './img/feminino/conjuntoalça.jpg',
+                    
                     './img/feminino/conjuntoalça3.jpg',
                     './img/feminino/conjuntoalça4.jpg',
                     './img/feminino/conjuntoalça5.jpg',
                     './img/feminino/conjuntoalça6.jpg'
 
                 ],
-                thumbnail: './img/feminino/conjuntoalça.jpg',
+                thumbnail: './img/feminino/conjuntoalça2.jpg',
                 price: '169,90',
             },
             {
