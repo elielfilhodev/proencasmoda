@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const backToCategoriesButton = document.getElementById('back-to-categories');
     const catalogTitle = document.getElementById('catalog-title');
     const subcategorySection = document.getElementById('subcategory-selection');
-const backToMainCategoriesButton = document.getElementById('back-to-main-categories');
-const subcategoryCards = document.querySelectorAll('.subcategory-card');
+    const backToMainCategoriesButton = document.getElementById('back-to-main-categories');
+    const subcategoryCards = document.querySelectorAll('.subcategory-card');
 
     // Elementos do Modal
     const productModal = document.getElementById('productModal');
@@ -24,6 +24,110 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
     // --- DADOS DE EXEMPLO DOS PRODUTOS ---
     const productsData = {
         feminino_vestidos: [
+            {
+                id: 'fem093',
+                name: 'Vestido Linho Manga Princesa',
+                description: 'Tecido linho/duna, com forro e bolso, tamanho único veste até o 44, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/nelly.jpg',
+                    './img/feminino/nelly2.jpg',
+                    './img/feminino/nelly3.jpg',
+                    './img/feminino/nelly4.jpg',
+                    './img/feminino/nelly5.jpg',
+
+                ],
+                thumbnail: './img/feminino/nelly.jpg',
+                price: '159,90',
+            },
+            {
+                id: 'fem092',
+                name: 'Vestido Linho Manga Princesa',
+                description: 'Tecido linho/duna, com forro e bolso, tamanho único veste até o 44, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/maisalese.jpg',
+                    './img/feminino/maisalese2.jpg',
+                    './img/feminino/maisalese3.jpg',
+                    './img/feminino/maisalese4.jpg',
+                    './img/feminino/maisalese5.jpg',
+
+                ],
+                thumbnail: './img/feminino/maisalese.jpg',
+                price: '159,90',
+            },
+            {
+                id: 'fem091',
+                name: 'Vestido Linho Manga Princesa',
+                description: 'Tecido linho/duna, com forro e bolso, tamanho único veste até o 44, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/indianoceda.jpg',
+                    './img/feminino/indianoceda2.jpg',
+                    './img/feminino/indianoceda3.jpg',
+
+                ],
+                thumbnail: './img/feminino/indianoceda.jpg',
+                price: '159,90',
+            },
+            {
+                id: 'fem090',
+                name: 'Vestido Linho Manga Princesa',
+                description: 'Tecido linho/duna, com forro e bolso, tamanho único veste até o 44, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/helena.jpg',
+                    './img/feminino/helena2.jpg',
+                    './img/feminino/helena4.jpg',
+                    './img/feminino/helena5.jpg',
+                    './img/feminino/helena6.jpg',
+                    './img/feminino/helena7.jpg',
+
+                ],
+                thumbnail: './img/feminino/helena.jpg',
+                price: '159,90',
+            },
+            {
+                id: 'fem089',
+                name: 'Vestido Linho Manga Princesa',
+                description: 'Tecido linho/duna, com forro e bolso, tamanho único veste até o 44, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/daybordadolese.jpg',
+                    './img/feminino/daybordadolese2.jpg',
+                    './img/feminino/daybordadolese3.jpg',
+                    './img/feminino/daybordadolese4.jpg',
+                    './img/feminino/daybordadolese5.jpg',
+                    './img/feminino/daybordadolese6.jpg',
+                    './img/feminino/daybordadolese7.jpg',
+                    './img/feminino/daybordadolese8.jpg',
+                    './img/feminino/daybordadolese9.jpg',
+                    './img/feminino/daybordadolese10.jpg',
+
+                ],
+                thumbnail: './img/feminino/daybordadolese.jpg',
+                price: '159,90',
+            },
+            {
+                id: 'fem088',
+                name: 'Vestido Linho Manga Princesa',
+                description: 'Tecido linho/duna, com forro e bolso, tamanho único veste até o 44, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/bordadolese.jpg',
+
+                ],
+                thumbnail: './img/feminino/bordadolese.jpg',
+                price: '159,90',
+            },
+            {
+                id: 'fem087',
+                name: 'Vestido Linho Manga Princesa',
+                description: 'Tecido linho/duna, com forro e bolso, tamanho único veste até o 44, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/bia.jpg',
+                    './img/feminino/bia2.jpg',
+                    './img/feminino/bia3.jpg',
+                    './img/feminino/bia4.jpg',
+
+                ],
+                thumbnail: './img/feminino/bia.jpg',
+                price: '159,90',
+            },
             {
                 id: 'fem086',
                 name: 'Vestido Linho Manga Princesa',
@@ -530,7 +634,7 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 thumbnail: './img/feminino/vestido longuete.jpg',
                 price: '169,90',
             },
-            
+
             {
                 id: 'fem040',
                 name: 'Vestido Prisila',
@@ -611,7 +715,7 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                     './img/feminino/vestidomilene10.jpg',
 
                 ],
-                thumbnail: './img/feminino/vestidomilene.jpg', 
+                thumbnail: './img/feminino/vestidomilene.jpg',
                 price: '149,90'
             },
             {
@@ -619,7 +723,7 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 name: 'Vestido Maya Linho',
                 description: 'Tecido Duna linho, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
-                    
+
                     './img/feminino/vestidomayalinho2.jpg',
                     './img/feminino/vestidomayalinho.jpg',
                     './img/feminino/vestidomayalinho3.jpg',
@@ -704,7 +808,7 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 thumbnail: './img/feminino/cardigandela.jpg',
                 price: '69,90'
             },
-                {
+            {
                 id: 'fem027',
                 name: 'Vestido Bordado com Brilho',
                 description: 'Tecido Viscolinho, com forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
@@ -750,7 +854,7 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 name: 'Vestido Natalia Tule',
                 description: 'Tecido em Tule forrado, tamanho ÚNICO veste até o 44, consultar cores disponíveis.',
                 images: [
-                    './img/feminino/vestidonataliatule.jpg', 
+                    './img/feminino/vestidonataliatule.jpg',
                     './img/feminino/vestidonataliatule2.jpg',
                     './img/feminino/natalia.jpg',
                     './img/feminino/natalia2.jpg',
@@ -856,7 +960,7 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                     './img/feminino/vestidogolapadre3.jpg',
                     './img/feminino/vestidogolapadre4.jpg',
                     './img/feminino/vestidogolapadre5.jpg',
-                    
+
                 ],
                 thumbnail: './img/feminino/vestidogolapadre6.jpg',
                 price: '169,90'
@@ -981,7 +1085,23 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 price: '149,90'
             },
         ],
-            feminino_plus: [ // NOVA COLEÇÃO MODA PLUS
+        feminino_plus: [ // NOVA COLEÇÃO MODA PLUS
+            {
+                id: 'fplus016',
+                name: 'Vestido Alfaiataria Plus',
+                description: 'Vestido Alfaiataria, botão funcional, ajuste na cintura, tamanho único veste do 44 ao 52, consultar cores disponíveis.',
+                images: [
+                    './img/feminino_plus/vestidoalfaiatariaplus.jpg',
+                    './img/feminino_plus/vestidoalfaiatariaplus2.jpg',
+                    './img/feminino_plus/vestidoalfaiatariaplus3.jpg',
+                    './img/feminino_plus/vestidoalfaiatariaplus4.jpg',
+                    './img/feminino_plus/vestidoalfaiatariaplus5.jpg',
+                    './img/feminino_plus/vestidoalfaiatariaplus6.jpg',
+                    './img/feminino_plus/vestidoalfaiatariaplus7.jpg',
+                ],
+                thumbnail: './img/feminino_plus/vestidoalfaiatariaplus.jpg',
+                price: '179,90',
+            },
             {
                 id: 'fplus015',
                 name: 'Vestido Alfaiataria Plus',
@@ -1052,8 +1172,8 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                     './img/feminino_plus/katarina8.jpg',
                     './img/feminino_plus/katarina9.jpg',
                 ],
-                thumbnail: './img/feminino_plus/katarina.jpg', 
-                price: '169,90', 
+                thumbnail: './img/feminino_plus/katarina.jpg',
+                price: '169,90',
             },
             {
                 id: 'fplus010',
@@ -1089,7 +1209,7 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                     './img/feminino_plus/dunaplusmangalonga.jpg',
                     './img/feminino_plus/dunaplusmangalonga2.jpg'
                 ],
-                thumbnail: './img/feminino_plus/dunaplusmangalonga.jpg', 
+                thumbnail: './img/feminino_plus/dunaplusmangalonga.jpg',
                 price: '179,90',
             },
             {
@@ -1175,7 +1295,7 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 name: 'Conjunto Linho',
                 description: 'Tecido Linho com forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
                 images: [
-                    './img/feminino/conjuntolinho.jpg', 
+                    './img/feminino/conjuntolinho.jpg',
                     './img/feminino/conjuntolinho2.jpg',
                     './img/feminino/conjuntolinho3.jpg',
                 ],
@@ -1189,7 +1309,7 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
                 images: [
                     './img/feminino/conjuntoalça2.jpg',
                     './img/feminino/conjuntoalça.jpg',
-                    
+
                     './img/feminino/conjuntoalça3.jpg',
                     './img/feminino/conjuntoalça4.jpg',
                     './img/feminino/conjuntoalça5.jpg',
@@ -1226,18 +1346,18 @@ const subcategoryCards = document.querySelectorAll('.subcategory-card');
      * Mostra uma seção específica e esconde as outras.
      * @param {HTMLElement} sectionToShow - A seção a ser exibida.
      */
-function showSection(sectionToShow) {
-    // Esconde todas as seções
-    categorySection.classList.remove('active-section');
-    productCatalogSection.classList.remove('active-section');
-    subcategorySection.classList.remove('active-section');
-    
-    // Mostra a seção desejada
-    sectionToShow.classList.add('active-section');
-    
-    // Rola a página para o topo suavemente
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
+    function showSection(sectionToShow) {
+        // Esconde todas as seções
+        categorySection.classList.remove('active-section');
+        productCatalogSection.classList.remove('active-section');
+        subcategorySection.classList.remove('active-section');
+
+        // Mostra a seção desejada
+        sectionToShow.classList.add('active-section');
+
+        // Rola a página para o topo suavemente
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
 
     /**
      * Exibe os produtos de uma categoria específica no grid.
@@ -1246,7 +1366,7 @@ function showSection(sectionToShow) {
     function displayProducts(categoryKey) {
         productGridContainer.innerHTML = ''; // Limpa produtos anteriores
         currentProducts = productsData[categoryKey] || [];
-        
+
         const categoryName = categoryKey.charAt(0).toUpperCase() + categoryKey.slice(1);
         catalogTitle.textContent = `Coleção ${categoryName}`;
 
@@ -1327,34 +1447,34 @@ function showSection(sectionToShow) {
     // --- EVENT LISTENERS ---
 
     // Event listener para os cards de categoria
-categoryCards.forEach(card => {
-    card.addEventListener('click', () => {
-        const categoryKey = card.dataset.category;
-        
-        if (categoryKey === 'feminino') {
-            // Mostra subcategorias para moda feminina
-            showSection(subcategorySection);
-        } else if (productsData[categoryKey]) {
-            // Mostra diretamente os produtos para outras categorias
-            displayProducts(categoryKey);
+    categoryCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const categoryKey = card.dataset.category;
+
+            if (categoryKey === 'feminino') {
+                // Mostra subcategorias para moda feminina
+                showSection(subcategorySection);
+            } else if (productsData[categoryKey]) {
+                // Mostra diretamente os produtos para outras categorias
+                displayProducts(categoryKey);
+                showSection(productCatalogSection);
+            } else {
+                alert('Coleção não encontrada ou indisponível no momento.');
+            }
+        });
+    });
+
+    subcategoryCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const subcategoryKey = card.dataset.subcategory;
+            displayProducts(subcategoryKey);
             showSection(productCatalogSection);
-        } else {
-            alert('Coleção não encontrada ou indisponível no momento.');
-        }
+        });
     });
-});
 
-subcategoryCards.forEach(card => {
-    card.addEventListener('click', () => {
-        const subcategoryKey = card.dataset.subcategory;
-        displayProducts(subcategoryKey);
-        showSection(productCatalogSection);
+    backToMainCategoriesButton.addEventListener('click', () => {
+        showSection(categorySection);
     });
-});
-
-backToMainCategoriesButton.addEventListener('click', () => {
-    showSection(categorySection);
-});
 
     // Event listener para o botão "Voltar às Coleções"
     backToCategoriesButton.addEventListener('click', () => {
@@ -1382,44 +1502,44 @@ backToMainCategoriesButton.addEventListener('click', () => {
     showSection(categorySection);
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  const carouselTrack = document.querySelector('.carousel-track');
-  const slides = document.querySelectorAll('.carousel-slide');
-  
-  // Duplica os slides para efeito infinito contínuo
-  function duplicateSlides() {
-    const slidesArray = Array.from(slides);
-    const firstFourSlides = slidesArray.slice(0, 4);
-    
-    firstFourSlides.forEach(slide => {
-      const clone = slide.cloneNode(true);
-      carouselTrack.appendChild(clone);
+document.addEventListener('DOMContentLoaded', function () {
+    const carouselTrack = document.querySelector('.carousel-track');
+    const slides = document.querySelectorAll('.carousel-slide');
+
+    // Duplica os slides para efeito infinito contínuo
+    function duplicateSlides() {
+        const slidesArray = Array.from(slides);
+        const firstFourSlides = slidesArray.slice(0, 4);
+
+        firstFourSlides.forEach(slide => {
+            const clone = slide.cloneNode(true);
+            carouselTrack.appendChild(clone);
+        });
+    }
+
+    // Verifica se precisa duplicar (caso o JavaScript esteja ativo)
+    if (slides.length < 8) {
+        duplicateSlides();
+    }
+
+    // Pausa animação no hover
+    carouselTrack.addEventListener('mouseenter', () => {
+        carouselTrack.style.animationPlayState = 'paused';
     });
-  }
-  
-  // Verifica se precisa duplicar (caso o JavaScript esteja ativo)
-  if (slides.length < 8) {
-    duplicateSlides();
-  }
-  
-  // Pausa animação no hover
-  carouselTrack.addEventListener('mouseenter', () => {
-    carouselTrack.style.animationPlayState = 'paused';
-  });
-  
-  carouselTrack.addEventListener('mouseleave', () => {
-    carouselTrack.style.animationPlayState = 'running';
-  });
-  
-  // Efeito de interação com os slides
-  const allSlides = document.querySelectorAll('.carousel-slide');
-  allSlides.forEach(slide => {
-    slide.addEventListener('mouseenter', () => {
-      slide.querySelector('.carousel-text').style.transform = 'scale(1.05)';
+
+    carouselTrack.addEventListener('mouseleave', () => {
+        carouselTrack.style.animationPlayState = 'running';
     });
-    
-    slide.addEventListener('mouseleave', () => {
-    slide.querySelector('.carousel-text').style.transform = 'scale(1)';
-    });
+
+    // Efeito de interação com os slides
+    const allSlides = document.querySelectorAll('.carousel-slide');
+    allSlides.forEach(slide => {
+        slide.addEventListener('mouseenter', () => {
+            slide.querySelector('.carousel-text').style.transform = 'scale(1.05)';
+        });
+
+        slide.addEventListener('mouseleave', () => {
+            slide.querySelector('.carousel-text').style.transform = 'scale(1)';
+        });
     });
 });
