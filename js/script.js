@@ -1291,6 +1291,38 @@ document.addEventListener('DOMContentLoaded', () => {
         ],
         feminino_conjuntos: [
             {
+                id: 'fem009',
+                name: 'Conjunto Linho',
+                description: 'Tecido Linho com forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                images: [
+                    './img/feminino/tricoline.jpg',
+                    './img/feminino/tricoline2.jpg',
+                ],
+                thumbnail: './img/feminino/tricoline.jpg',
+                price: '169,90'
+            },
+            {
+                id: 'fem008',
+                name: 'Conjunto Linho',
+                description: 'Tecido Linho com forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                images: [
+                    './img/feminino/sara.jpg',
+                    './img/feminino/sara2.jpg',
+                ],
+                thumbnail: './img/feminino/sara.jpg',
+                price: '169,90'
+            },
+            {
+                id: 'fem007',
+                name: 'Conjunto Linho',
+                description: 'Tecido Linho com forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                images: [
+                    './img/feminino/macaquinho.jpg',
+                ],
+                thumbnail: './img/feminino/macaquinho.jpg',
+                price: '169,90'
+            },
+            {
                 id: 'fem006',
                 name: 'Conjunto Linho',
                 description: 'Tecido Linho com forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
