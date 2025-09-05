@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         feminino_vestidos: [
             {
                 id: 'fem093',
-                name: 'Vestido Linho Manga Princesa',
+                name: 'Vestido Nelly',
                 description: 'Tecido linho/duna, com forro e bolso, tamanho único veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/nelly.jpg',
@@ -36,12 +36,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/nelly5.jpg',
 
                 ],
-                thumbnail: './img/feminino/nelly.jpg',
+                thumbnail: './img/feminino/nelly4.jpg',
                 price: '159,90',
             },
             {
                 id: 'fem092',
-                name: 'Vestido Linho Manga Princesa',
+                name: 'Vestido Maisa Bordado em Lese',
                 description: 'Tecido linho/duna, com forro e bolso, tamanho único veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/maisalese.jpg',
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem091',
-                name: 'Vestido Linho Manga Princesa',
+                name: 'Vestido Indiano Seda',
                 description: 'Tecido linho/duna, com forro e bolso, tamanho único veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/indianoceda.jpg',
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem090',
-                name: 'Vestido Linho Manga Princesa',
+                name: 'Vestido Elena',
                 description: 'Tecido linho/duna, com forro e bolso, tamanho único veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/helena.jpg',
@@ -80,12 +80,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/helena7.jpg',
 
                 ],
-                thumbnail: './img/feminino/helena.jpg',
+                thumbnail: './img/feminino/helena7.jpg',
                 price: '159,90',
             },
             {
                 id: 'fem089',
-                name: 'Vestido Linho Manga Princesa',
+                name: 'Vestido Day Bordado em Lese',
                 description: 'Tecido linho/duna, com forro e bolso, tamanho único veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/daybordadolese.jpg',
@@ -100,12 +100,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/daybordadolese10.jpg',
 
                 ],
-                thumbnail: './img/feminino/daybordadolese.jpg',
+                thumbnail: './img/feminino/daybordadolese2.jpg',
                 price: '159,90',
             },
             {
                 id: 'fem088',
-                name: 'Vestido Linho Manga Princesa',
+                name: 'Vestido Viscomida Bordado em Lese',
                 description: 'Tecido linho/duna, com forro e bolso, tamanho único veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/bordadolese.jpg',
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 id: 'fem087',
-                name: 'Vestido Linho Manga Princesa',
+                name: 'Vestido Bia',
                 description: 'Tecido linho/duna, com forro e bolso, tamanho único veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/bia.jpg',
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/bia4.jpg',
 
                 ],
-                thumbnail: './img/feminino/bia.jpg',
+                thumbnail: './img/feminino/bia2.jpg',
                 price: '159,90',
             },
             {
