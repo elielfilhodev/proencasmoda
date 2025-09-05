@@ -1102,22 +1102,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 price: '159,90',
             },
             {
-                id: 'fplus016',
-                name: 'Vestido Alfaiataria Plus',
-                description: 'Vestido Alfaiataria, botão funcional, ajuste na cintura, tamanho único veste do 44 ao 52, consultar cores disponíveis.',
-                images: [
-                    './img/feminino_plus/vestidoalfaiatariaplus.jpg',
-                    './img/feminino_plus/vestidoalfaiatariaplus2.jpg',
-                    './img/feminino_plus/vestidoalfaiatariaplus3.jpg',
-                    './img/feminino_plus/vestidoalfaiatariaplus4.jpg',
-                    './img/feminino_plus/vestidoalfaiatariaplus5.jpg',
-                    './img/feminino_plus/vestidoalfaiatariaplus6.jpg',
-                    './img/feminino_plus/vestidoalfaiatariaplus7.jpg',
-                ],
-                thumbnail: './img/feminino_plus/vestidoalfaiatariaplus.jpg',
-                price: '179,90',
-            },
-            {
                 id: 'fplus015',
                 name: 'Vestido Alfaiataria Plus',
                 description: 'Vestido Alfaiataria, botão funcional, ajuste na cintura, tamanho único veste do 44 ao 52, consultar cores disponíveis.',
