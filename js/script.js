@@ -25,6 +25,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const productsData = {
         feminino_vestidos: [
             {
+                id: 'fem094',
+                name: 'Vestido Denise',
+                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                images: [
+                    './img/feminino/denise.jpg',
+                    './img/feminino/denise2.jpg',
+                    './img/feminino/denise3.jpg',
+                    './img/feminino/denise4.jpg',
+                    './img/feminino/denise5.jpg',
+                    './img/feminino/denise6.jpg',
+
+                ],
+                thumbnail: './img/feminino/denise5.jpg',
+                price: '139,90',
+            },
+            {
                 id: 'fem093',
                 name: 'Vestido Nelly',
                 description: 'Tecido linho duna, com forro bolso e fenda, tamanho G e GG, consultar cores disponíveis.',
