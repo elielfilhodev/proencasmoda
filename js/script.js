@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 id: 'fem093',
                 name: 'Vestido Nelly',
-                description: 'Tecido linho/duna, com forro e bolso, tamanho único veste até o 44, consultar cores disponíveis.',
+                description: 'Tecido linho duna, com forro bolso e fenda, tamanho G e GG, consultar cores disponíveis.',
                 images: [
                     './img/feminino/nelly.jpg',
                     './img/feminino/nelly2.jpg',
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 id: 'fem092',
                 name: 'Vestido Maisa Bordado em Lese',
-                description: 'Tecido linho/duna, com forro e bolso, tamanho único veste até o 44, consultar cores disponíveis.',
+                description: 'Tecdido Viscolinho bordado em lese, com forro, tamanho único veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/maisalese.jpg',
                     './img/feminino/maisalese2.jpg',
@@ -52,12 +52,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 ],
                 thumbnail: './img/feminino/maisalese.jpg',
-                price: '159,90',
+                price: '189,90',
             },
             {
                 id: 'fem091',
                 name: 'Vestido Indiano Seda',
-                description: 'Tecido linho/duna, com forro e bolso, tamanho único veste até o 44, consultar cores disponíveis.',
+                description: 'Tecido seda, tamanho único veste até o 46, consultar cores disponíveis.',
                 images: [
                     './img/feminino/indianoceda.jpg',
                     './img/feminino/indianoceda2.jpg',
@@ -65,12 +65,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 ],
                 thumbnail: './img/feminino/indianoceda.jpg',
-                price: '159,90',
+                price: '169,90',
             },
             {
                 id: 'fem090',
                 name: 'Vestido Elena',
-                description: 'Tecido linho/duna, com forro e bolso, tamanho único veste até o 44, consultar cores disponíveis.',
+                description: 'Tecido duna com forro, estampado, tamanho único veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/helena.jpg',
                     './img/feminino/helena2.jpg',
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 id: 'fem089',
                 name: 'Vestido Day Bordado em Lese',
-                description: 'Tecido linho/duna, com forro e bolso, tamanho único veste até o 44, consultar cores disponíveis.',
+                description: 'Tecido Chambrae bordado em lese com forro, tamanho M 40/42 G 44/46, consultar cores disponíveis.',
                 images: [
                     './img/feminino/daybordadolese.jpg',
                     './img/feminino/daybordadolese2.jpg',
@@ -101,23 +101,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 ],
                 thumbnail: './img/feminino/daybordadolese2.jpg',
-                price: '159,90',
+                price: '179,90',
             },
             {
                 id: 'fem088',
                 name: 'Vestido Viscomida Bordado em Lese',
-                description: 'Tecido linho/duna, com forro e bolso, tamanho único veste até o 44, consultar cores disponíveis.',
+                description: 'Tecido Viscomida com forro bordado em lese, tamanho único veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/bordadolese.jpg',
 
                 ],
                 thumbnail: './img/feminino/bordadolese.jpg',
-                price: '159,90',
+                price: '189,90',
             },
             {
                 id: 'fem087',
                 name: 'Vestido Bia',
-                description: 'Tecido linho/duna, com forro e bolso, tamanho único veste até o 44, consultar cores disponíveis.',
+                description: 'Tecido Sensorial marrant, tamanho único veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/bia.jpg',
                     './img/feminino/bia2.jpg',
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 ],
                 thumbnail: './img/feminino/bia2.jpg',
-                price: '159,90',
+                price: '169,90',
             },
             {
                 id: 'fem086',
@@ -1086,6 +1086,21 @@ document.addEventListener('DOMContentLoaded', () => {
             },
         ],
         feminino_plus: [ // NOVA COLEÇÃO MODA PLUS
+            {
+                id: 'fplus017',
+                name: 'Vestido Nelly',
+                description: 'Tecido linho duna, com forro bolso e fenda, tamanho G e GG, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/nelly.jpg',
+                    './img/feminino/nelly2.jpg',
+                    './img/feminino/nelly3.jpg',
+                    './img/feminino/nelly4.jpg',
+                    './img/feminino/nelly5.jpg',
+
+                ],
+                thumbnail: './img/feminino/nelly4.jpg',
+                price: '159,90',
+            },
             {
                 id: 'fplus016',
                 name: 'Vestido Alfaiataria Plus',
