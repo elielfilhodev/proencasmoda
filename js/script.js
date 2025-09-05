@@ -1308,34 +1308,34 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 id: 'fem009',
                 name: 'Conjunto Linho',
-                description: 'Tecido Linho com forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                description: 'Tecido tricoline, com forro, tamanho único veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/tricoline.jpg',
                     './img/feminino/tricoline2.jpg',
                 ],
                 thumbnail: './img/feminino/tricoline.jpg',
-                price: '169,90'
+                price: '179,90'
             },
             {
                 id: 'fem008',
-                name: 'Conjunto Linho',
-                description: 'Tecido Linho com forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                name: 'Conjunto Sara',
+                description: 'Tecido duna SHORTS SAIA, tamanho único veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/sara.jpg',
                     './img/feminino/sara2.jpg',
                 ],
                 thumbnail: './img/feminino/sara.jpg',
-                price: '169,90'
+                price: '119,90'
             },
             {
                 id: 'fem007',
-                name: 'Conjunto Linho',
-                description: 'Tecido Linho com forro, tamanho ÚNICO veste até o 44, consultar cores disponíveis. Elegante e sofisticado, ideal para ocasiões especiais.',
+                name: 'Macaquinho',
+                description: 'Tecido duna Tamanho único veste até o 44, consultar cores disponíveis.',
                 images: [
                     './img/feminino/macaquinho.jpg',
                 ],
                 thumbnail: './img/feminino/macaquinho.jpg',
-                price: '169,90'
+                price: '119,90'
             },
             {
                 id: 'fem006',
