@@ -41,9 +41,25 @@ main {
 
 /* Cabeçalho Principal */
 .main-header {
-    text-align: center;
-    padding: 60px 20px 40px;
+    padding: 40px 20px;
     background: linear-gradient(135deg, #ffffff 0%, #f1f3f5 100%);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.logo-section {
+    text-align: center;
+    flex: 1;
+    min-width: 300px;
 }
 
 .store-name {
@@ -58,6 +74,152 @@ main {
     font-size: clamp(1rem, 2.5vw, 1.3rem);
     color: #555;
     font-weight: 300;
+}
+
+.header-features {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    min-width: 120px;
+}
+
+.feature-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item svg {
+    color: var(--primary-color);
+    transition: color var(--transition-speed) ease;
+}
+
+.feature-item:hover svg {
+    color: var(--accent-color);
+}
+
+.feature-item span {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color);
+    text-align: center;
+}
+
+/* Seção de Destaques */
+.highlights-section {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.highlights-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.highlights-title {
+    font-family: var(--font-headings);
+    text-align: center;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    margin-bottom: 50px;
+    color: var(--primary-color);
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.highlights-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.highlight-card {
+    background: var(--light-text-color);
+    padding: 40px 30px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.highlight-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 100%);
+}
+
+.highlight-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.highlight-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform var(--transition-speed) ease;
+}
+
+.highlight-card:hover .highlight-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.highlight-icon svg {
+    color: white;
+    transition: transform var(--transition-speed) ease;
+}
+
+.highlight-card:hover .highlight-icon svg {
+    transform: scale(1.1);
+}
+
+.highlight-card h3 {
+    font-family: var(--font-headings);
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.highlight-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
 }
 
 /* Estilos Gerais das Seções */
@@ -209,6 +371,7 @@ main {
     display: flex;
     flex-direction: column;
     opacity: 0; /* Para animação de entrada */
+    position: relative;
 }
 
 .product-card.fade-in { /* Classe para animação de entrada */
@@ -218,6 +381,58 @@ main {
 @keyframes fadeInCard {
     from { opacity: 0; transform: translateY(20px) scale(0.95); }
     to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes slideInFromLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInFromRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Animações de entrada */
+.highlight-card {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.highlight-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.highlight-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.highlight-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.feature-item {
+    animation: slideInFromRight 0.6s ease-out forwards;
+}
+
+.feature-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.feature-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.feature-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.logo-section {
+    animation: slideInFromLeft 0.8s ease-out forwards;
 }
 
 
@@ -395,12 +610,138 @@ main {
     color: #555;
     margin-bottom: 25px;
 }
+.product-price-section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid var(--border-color);
+}
+
 #precoProduto { /* Estilização básica para o preço */
     font-size: clamp(1.2rem, 3vw, 1.8rem);
     color: var(--accent-color);
     font-weight: bold;
     margin-bottom: 20px;
     font-family: var(--font-headings);
+}
+
+.order-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    text-decoration: none;
+    font-family: var(--font-primary);
+    width: 100%;
+    justify-content: center;
+}
+
+.order-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+    background: linear-gradient(135deg, #128C7E 0%, #25D366 100%);
+}
+
+.order-button:active {
+    transform: translateY(-1px);
+}
+
+.order-button svg {
+    transition: transform 0.3s ease;
+}
+
+.order-button:hover svg {
+    transform: scale(1.1);
+}
+
+/* Badges e elementos visuais de loja */
+.product-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: linear-gradient(135deg, var(--accent-color) 0%, #8B4513 100%);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.product-badge.new {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+}
+
+.product-badge.sale {
+    background: linear-gradient(135deg, #dc3545 0%, #e83e8c 100%);
+}
+
+.product-badge.popular {
+    background: linear-gradient(135deg, #fd7e14 0%, #ffc107 100%);
+}
+
+.product-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+    z-index: 1;
+}
+
+.product-card:hover .product-image-container::before {
+    transform: translateX(100%);
+}
+
+.product-info {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+    position: relative;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-top: 8px;
+}
+
+.product-rating {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin: 8px 0;
+}
+
+.star {
+    color: #ffc107;
+    font-size: 0.9rem;
+}
+
+.product-availability {
+    font-size: 0.85rem;
+    color: #28a745;
+    font-weight: 500;
+    margin-top: 5px;
 }
 
 
@@ -434,6 +775,29 @@ main {
 
 /* Responsividade */
 @media (max-width: 992px) { 
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header-features {
+        gap: 20px;
+    }
+    
+    .feature-item {
+        min-width: 100px;
+        padding: 12px;
+    }
+    
+    .highlights-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    
+    .highlight-card {
+        padding: 30px 20px;
+    }
+    
     .modal-body {
         flex-direction: column;
     }
@@ -451,8 +815,41 @@ main {
 
 @media (max-width: 768px) { 
     .main-header {
-        padding: 40px 15px 30px;
+        padding: 30px 15px;
     }
+    
+    .header-features {
+        gap: 15px;
+    }
+    
+    .feature-item {
+        min-width: 80px;
+        padding: 10px;
+    }
+    
+    .feature-item span {
+        font-size: 0.8rem;
+    }
+    
+    .highlights-section {
+        padding: 40px 15px;
+    }
+    
+    .highlights-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .highlight-card {
+        padding: 25px 15px;
+    }
+    
+    .highlight-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+    
     .section-title {
         margin-bottom: 40px;
     }
@@ -484,6 +881,37 @@ main {
 }
 
 @media (max-width: 480px) { 
+    .main-header {
+        padding: 20px 10px;
+    }
+    
+    .header-features {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .feature-item {
+        flex-direction: row;
+        gap: 10px;
+        min-width: auto;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .highlights-section {
+        padding: 30px 10px;
+    }
+    
+    .highlight-card {
+        padding: 20px 15px;
+    }
+    
+    .highlight-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+    }
+    
     .product-grid {
         grid-template-columns: 1fr; 
     }

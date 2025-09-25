@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalProductName = document.getElementById('modalProductName');
     const modalProductDescription = document.getElementById('modalProductDescription');
     const precoProduto = document.getElementById('precoProduto');
+    const orderButton = document.getElementById('orderButton');
 
     let currentProducts = []; // Armazena os produtos da categoria atualmente visualizada
 
@@ -1427,10 +1428,32 @@ document.addEventListener('DOMContentLoaded', () => {
             productCard.classList.add('product-card');
             productCard.dataset.productId = product.id;
 
+            // Determina o badge baseado no ID do produto
+            let badgeHtml = '';
+            if (product.id.includes('fem094') || product.id.includes('fem093') || product.id.includes('fem092')) {
+                badgeHtml = '<div class="product-badge new">Novo</div>';
+            } else if (product.id.includes('fem081') || product.id.includes('fem028')) {
+                badgeHtml = '<div class="product-badge sale">Promoção</div>';
+            } else if (product.id.includes('fem001') || product.id.includes('fem005') || product.id.includes('fem017')) {
+                badgeHtml = '<div class="product-badge popular">Popular</div>';
+            }
+
             productCard.innerHTML = `
-                <img src="${product.thumbnail}" alt="${product.name}" class="product-image" loading="lazy">
+                <div class="product-image-container">
+                    <img src="${product.thumbnail}" alt="${product.name}" class="product-image" loading="lazy">
+                    ${badgeHtml}
+                </div>
                 <div class="product-info">
                     <h4>${product.name}</h4>
+                    <div class="product-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="product-price">R$ ${product.price}</div>
+                    <div class="product-availability">✓ Disponível</div>
                 </div>
             `;
             // Adiciona a classe de animação com um pequeno delay para efeito cascata
@@ -1441,6 +1464,18 @@ document.addEventListener('DOMContentLoaded', () => {
             productCard.addEventListener('click', () => openProductModal(product.id));
             productGridContainer.appendChild(productCard);
         });
+    }
+
+    /**
+     * Cria o link do WhatsApp para encomenda do produto
+     * @param {Object} product - O produto a ser encomendado
+     * @returns {string} - URL do WhatsApp
+     */
+    function createWhatsAppLink(product) {
+        const phoneNumber = "5515998437553"; // Número do WhatsApp
+        const message = `Olá! Gostaria de encomendar o produto:\n\n*${product.name}*\n\nPreço: R$ ${product.price}\n\nDescrição: ${product.description}\n\nPodem me ajudar com mais informações?`;
+        const encodedMessage = encodeURIComponent(message);
+        return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     }
 
     /**
@@ -1458,7 +1493,13 @@ document.addEventListener('DOMContentLoaded', () => {
         modalMainImage.alt = `Imagem principal de ${product.name}`;
         modalProductName.textContent = product.name;
         modalProductDescription.textContent = product.description;
-        precoProduto.textContent = `Valor: R$ ${product.price}`; // Exemplo de preço, pode ser ajustado conforme necessário
+        precoProduto.textContent = `R$ ${product.price}`;
+        
+        // Configura o botão de encomendar
+        orderButton.onclick = () => {
+            const whatsappLink = createWhatsAppLink(product);
+            window.open(whatsappLink, '_blank');
+        };
 
         modalThumbnailsContainer.innerHTML = ''; // Limpa thumbnails anteriores
         product.images.forEach((imgSrc, index) => {
