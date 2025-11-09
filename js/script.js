@@ -23,9 +23,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const productsData = {
         feminino_vestidos: [
             {
+                id: 'fem0108',
+                name: 'Vestido Curto Alça',
+                description: 'Tecido crepinho, tamanho único, veste até o 44, verificar cores disponíveis.',
+                    images: [
+                        './img/feminino/curto-alca2.jpg',
+                        './img/feminino/curto-alca.jpg',
+                        './img/feminino/curto-alca3.jpg',
+                        './img/feminino/curto-alca4.jpg',
+                        './img/feminino/curto-alca5.jpg',
+                        './img/feminino/curto-alca6.jpg'
+                ],
+                thumbnail: './img/feminino/curto-alca2.jpg',
+                price: '79,90',
+            },
+            
+            {
                 id: 'fem0107',
                 name: 'Vestido Viscomida Bordado',
-                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                description: 'Tecido viscomida bordado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
                     images: [
                         './img/feminino/vestido-viscomida-bordado.jpg',
                         './img/feminino/vestido-viscomida-bordado2.jpg',
@@ -34,12 +50,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         './img/feminino/vestido-viscomida-bordado5.jpg',
                 ],
                 thumbnail: './img/feminino/vestido-viscomida-bordado.jpg',
-                price: '139,90',
+                price: '159,90',
             },
             {
                 id: 'fem0106',
                 name: 'Vestido Malu',
-                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                description: 'Tecido viscolinho com forro imoprtado, tamanho único, veste até o 44 verificar cores disponíveis.',
                 images: [
                     './img/feminino/vestido-malu.jpg',
                     './img/feminino/vestido-malu2.jpg',
@@ -48,56 +64,42 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestido-malu5.jpg',
                 ],
                 thumbnail: './img/feminino/vestido-malu.jpg',
-                price: '139,90',
-            },
-            {
-                id: 'fem0106',
-                name: 'Vestido Malu',
-                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
-                images: [
-                    './img/feminino/vestido-malu.jpg',
-                    './img/feminino/vestido-malu2.jpg',
-                    './img/feminino/vestido-malu3.jpg',
-                    './img/feminino/vestido-malu4.jpg',
-                    './img/feminino/vestido-malu5.jpg',
-                ],
-                thumbnail: './img/feminino/vestido-malu.jpg',
-                price: '139,90',
+                price: '159,90',
             },
             {
                 id: 'fem0105',
                 name: 'Vestido Aline',
-                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                description: 'Tecido crepinho estampado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
                 images: [
                     './img/feminino/vestido-aline.jpg',
                 ],
                 thumbnail: './img/feminino/vestido-aline.jpg',
-                price: '139,90',
+                price: '129,90',
             },
             {
                 id: 'fem0104',
                 name: 'Vestido Lara Em Lese',
-                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                description: 'Tecido algodão em lese, tamanho único, veste até o 44, verificar cores disponíveis.',
                 images: [
                     './img/feminino/vestido-lara-lese.jpg',
                 ],
                 thumbnail: './img/feminino/vestido-lara-lese.jpg',
-                price: '139,90',
+                price: '189,90',
             },
             {
                 id: 'fem0103',
                 name: 'Vestido Mosaico',
-                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                description: 'Tecido duna duna com forro, tamanhos: M 38/40, GG 42/44, verificar cores disponíveis.',
                 images: [
                     './img/feminino/vestido-mosaico.jpg',
                 ],
                 thumbnail: './img/feminino/vestido-mosaico.jpg',
-                price: '139,90',
+                price: '159,90',
             },
             {
                 id: 'fem0102',
                 name: 'Vestido Lese Novo',
-                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                description: 'Tecido algodão com forro bordado em lese, tamanho único, veste até o 44, verificar cores disponíveis.',
                 images: [
                     './img/feminino/vestido-less-novo.jpg',
                     './img/feminino/vestido-less-novo2.jpg',
@@ -106,12 +108,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestido-less-novo5.jpg',
                 ],
                 thumbnail: './img/feminino/vestido-less-novo.jpg',
-                price: '139,90',
+                price: '189,90',
             },
             {
                 id: 'fem0101',
                 name: 'Vestido Luana Manga Longa',
-                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                description: 'Tecido crepinho importado, tamanho único, veste até o 44, verificar cores disponíveis.',
                 images: [
                     './img/feminino/vestido-luana-manga-longa.jpg',
                     './img/feminino/vestido-luana-manga-longa2.jpg',
@@ -119,12 +121,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestido-luana-manga-longa4.jpg',
                 ],
                 thumbnail: './img/feminino/vestido-luana-manga-longa.jpg',
-                price: '139,90',
+                price: '159,90',
             },
             {
                 id: 'fem0100',
                 name: 'Vestido Sensorial',
-                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                description: 'Tecido sensorial com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
                 images: [
                     './img/feminino/vestido-sensorial.jpg',
                     './img/feminino/vestido-sensorial2.jpg',
@@ -135,12 +137,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestido-sensorial7.jpg',
                 ],
                 thumbnail: './img/feminino/vestido-sensorial.jpg',
-                price: '139,90',
+                price: '159,90',
             },
             {
                 id: 'fem099',
                 name: 'Vestido Thema',
-                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                description: 'Tecido duna com forro, ACOMPANHA CINTO, tamanho único, veste até o 44, verificar cores disponíveis.',
                 images: [
                     './img/feminino/vestido-thema.jpg',
                     './img/feminino/vestido-thema2.jpg',
@@ -149,12 +151,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestido-thema5.jpg',
                 ],
                 thumbnail: './img/feminino/vestido-thema.jpg',
-                price: '139,90',
+                price: '169,90',
             },
             {
                 id: 'fem098',
-                name: 'Vestido Alça Bordado',
-                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                name: 'Vestido Envelope',
+                description: 'Tecido linho duna amassado, tamanho único, veste até o 46, verificar cores disponíveis.',
                 images: [
                     './img/feminino/vestido-envelope.jpg',
                     './img/feminino/vestido-envelope2.jpg',
@@ -164,12 +166,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestido-envelope6.jpg',
                 ],
                 thumbnail: './img/feminino/vestido-envelope.jpg',
-                price: '139,90',
+                price: '159,90',
             },
             {
                 id: 'fem097',
                 name: 'Vestido Alça Bordado',
-                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                description: 'Tecido viscolinho bordado, tamanho único, veste até o 44, verificar cores disponíveis.',
                 images: [
                     './img/feminino/vestido-alca-bordado.jpg',
                     './img/feminino/vestido-alca-bordado2.jpg',
@@ -181,12 +183,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestido-alca-bordado8.jpg',
                 ],
                 thumbnail: './img/feminino/vestido-alca-bordado.jpg',
-                price: '139,90',
+                price: '169,90',
             },
             {
                 id: 'fem096',
-                name: 'Vestido Vestido Carol',
-                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                name: 'Vestido Carol',
+                description: 'Tecido algodão bordado em lese, tamanho único, veste até o 44, verificar cores disponíveis.',
                 images: [
                     './img/feminino/vestido-carol.jpg',
                     './img/feminino/vestido-carol2.jpg',
@@ -195,12 +197,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestido-carol5.jpg'
                 ],
                 thumbnail: './img/feminino/vestido-carol.jpg',
-                price: '139,90',
+                price: '189,90',
             },
             {
                 id: 'fem095',
                 name: 'Vestido Laço Ombro Alça',
-                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                description: 'Tecido linho duna com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
                 images: [
                     './img/feminino/vestido-laco-ombro-alca.jpg',
                     './img/feminino/vestido-laco-ombro-alca2.jpg',
@@ -209,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     './img/feminino/vestido-laco-ombro-alca5.jpg'
                 ],
                 thumbnail: './img/feminino/vestido-laco-ombro-alca.jpg',
-                price: '139,90',
+                price: '149,90',
             },
             {
                 id: 'fem094',
@@ -1290,14 +1292,30 @@ document.addEventListener('DOMContentLoaded', () => {
         ],
         feminino_plus: [ // NOVA COLEÇÃO MODA PLUS
             {
+                id: 'fplus018',
+                name: 'Vestido Débora Plus Bordado em Lese',
+                description: 'Tecido viscolinho bordado em lese com forro, tamanho único plus: veste 46/48/50, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/debora-plus.jpg',
+                    './img/feminino/debora-plus2.jpg',
+                    './img/feminino/debora-plus3.jpg',
+                    './img/feminino/debora-plus4.jpg',
+                    './img/feminino/debora-plus5.jpg',
+                    './img/feminino/debora-plus6.jpg',
+                    './img/feminino/debora-plus7.jpg'
+                ],
+                thumbnail: './img/feminino/debora-plus.jpg',
+                price: '189,90',
+            },
+            {
                 id: 'fplus017',
                 name: 'Vestido Casual Plus',
-                description: 'Tecido linho duna, com forro bolso e fenda, tamanho G e GG, consultar cores disponíveis.',
+                description: 'Tecido linho, botão funcional, veste até o 52, consultar cores disponíveis.',
                 images: [
                     './img/feminino/vestido-casual-plus.jpg',
                 ],
                 thumbnail: './img/feminino/vestido-casual-plus.jpg',
-                price: '159,90',
+                price: '189,90',
             },
             {
                 id: 'fplus017',
@@ -1502,6 +1520,16 @@ document.addEventListener('DOMContentLoaded', () => {
             },
         ],
         feminino_conjuntos: [
+            {
+                id: 'fem010',
+                name: 'Conjunto Colete',
+                description: 'Tecido tricoline, com forro, tamanho único veste até o 44, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/conunto-colete.jpg',
+                ],
+                thumbnail: './img/feminino/conunto-colete.jpg',
+                price: '179,90'
+            },
             {
                 id: 'fem009',
                 name: 'Conjunto Linho',
