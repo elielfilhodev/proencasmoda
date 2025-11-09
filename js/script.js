@@ -6,9 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const productGridContainer = document.getElementById('product-grid-container');
     const backToCategoriesButton = document.getElementById('back-to-categories');
     const catalogTitle = document.getElementById('catalog-title');
-    const subcategorySection = document.getElementById('subcategory-selection');
-    const backToMainCategoriesButton = document.getElementById('back-to-main-categories');
-    const subcategoryCards = document.querySelectorAll('.subcategory-card');
 
     // Elementos do Modal
     const productModal = document.getElementById('productModal');
@@ -25,6 +22,195 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- DADOS DE EXEMPLO DOS PRODUTOS ---
     const productsData = {
         feminino_vestidos: [
+            {
+                id: 'fem0107',
+                name: 'Vestido Viscomida Bordado',
+                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                    images: [
+                        './img/feminino/vestido-viscomida-bordado.jpg',
+                        './img/feminino/vestido-viscomida-bordado2.jpg',
+                        './img/feminino/vestido-viscomida-bordado3.jpg',
+                        './img/feminino/vestido-viscomida-bordado4.jpg',
+                        './img/feminino/vestido-viscomida-bordado5.jpg',
+                ],
+                thumbnail: './img/feminino/vestido-viscomida-bordado.jpg',
+                price: '139,90',
+            },
+            {
+                id: 'fem0106',
+                name: 'Vestido Malu',
+                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                images: [
+                    './img/feminino/vestido-malu.jpg',
+                    './img/feminino/vestido-malu2.jpg',
+                    './img/feminino/vestido-malu3.jpg',
+                    './img/feminino/vestido-malu4.jpg',
+                    './img/feminino/vestido-malu5.jpg',
+                ],
+                thumbnail: './img/feminino/vestido-malu.jpg',
+                price: '139,90',
+            },
+            {
+                id: 'fem0106',
+                name: 'Vestido Malu',
+                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                images: [
+                    './img/feminino/vestido-malu.jpg',
+                    './img/feminino/vestido-malu2.jpg',
+                    './img/feminino/vestido-malu3.jpg',
+                    './img/feminino/vestido-malu4.jpg',
+                    './img/feminino/vestido-malu5.jpg',
+                ],
+                thumbnail: './img/feminino/vestido-malu.jpg',
+                price: '139,90',
+            },
+            {
+                id: 'fem0105',
+                name: 'Vestido Aline',
+                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                images: [
+                    './img/feminino/vestido-aline.jpg',
+                ],
+                thumbnail: './img/feminino/vestido-aline.jpg',
+                price: '139,90',
+            },
+            {
+                id: 'fem0104',
+                name: 'Vestido Lara Em Lese',
+                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                images: [
+                    './img/feminino/vestido-lara-lese.jpg',
+                ],
+                thumbnail: './img/feminino/vestido-lara-lese.jpg',
+                price: '139,90',
+            },
+            {
+                id: 'fem0103',
+                name: 'Vestido Mosaico',
+                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                images: [
+                    './img/feminino/vestido-mosaico.jpg',
+                ],
+                thumbnail: './img/feminino/vestido-mosaico.jpg',
+                price: '139,90',
+            },
+            {
+                id: 'fem0102',
+                name: 'Vestido Lese Novo',
+                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                images: [
+                    './img/feminino/vestido-less-novo.jpg',
+                    './img/feminino/vestido-less-novo2.jpg',
+                    './img/feminino/vestido-less-novo3.jpg',
+                    './img/feminino/vestido-less-novo4.jpg',
+                    './img/feminino/vestido-less-novo5.jpg',
+                ],
+                thumbnail: './img/feminino/vestido-less-novo.jpg',
+                price: '139,90',
+            },
+            {
+                id: 'fem0101',
+                name: 'Vestido Luana Manga Longa',
+                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                images: [
+                    './img/feminino/vestido-luana-manga-longa.jpg',
+                    './img/feminino/vestido-luana-manga-longa2.jpg',
+                    './img/feminino/vestido-luana-manga-longa3.jpg',
+                    './img/feminino/vestido-luana-manga-longa4.jpg',
+                ],
+                thumbnail: './img/feminino/vestido-luana-manga-longa.jpg',
+                price: '139,90',
+            },
+            {
+                id: 'fem0100',
+                name: 'Vestido Sensorial',
+                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                images: [
+                    './img/feminino/vestido-sensorial.jpg',
+                    './img/feminino/vestido-sensorial2.jpg',
+                    './img/feminino/vestido-sensorial3.jpg',
+                    './img/feminino/vestido-sensorial4.jpg',
+                    './img/feminino/vestido-sensorial5.jpg',
+                    './img/feminino/vestido-sensorial6.jpg',
+                    './img/feminino/vestido-sensorial7.jpg',
+                ],
+                thumbnail: './img/feminino/vestido-sensorial.jpg',
+                price: '139,90',
+            },
+            {
+                id: 'fem099',
+                name: 'Vestido Thema',
+                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                images: [
+                    './img/feminino/vestido-thema.jpg',
+                    './img/feminino/vestido-thema2.jpg',
+                    './img/feminino/vestido-thema3.jpg',
+                    './img/feminino/vestido-thema4.jpg',
+                    './img/feminino/vestido-thema5.jpg',
+                ],
+                thumbnail: './img/feminino/vestido-thema.jpg',
+                price: '139,90',
+            },
+            {
+                id: 'fem098',
+                name: 'Vestido Alça Bordado',
+                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                images: [
+                    './img/feminino/vestido-envelope.jpg',
+                    './img/feminino/vestido-envelope2.jpg',
+                    './img/feminino/vestido-envelope3.jpg',
+                    './img/feminino/vestido-envelope4.jpg',
+                    './img/feminino/vestido-envelope5.jpg',
+                    './img/feminino/vestido-envelope6.jpg',
+                ],
+                thumbnail: './img/feminino/vestido-envelope.jpg',
+                price: '139,90',
+            },
+            {
+                id: 'fem097',
+                name: 'Vestido Alça Bordado',
+                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                images: [
+                    './img/feminino/vestido-alca-bordado.jpg',
+                    './img/feminino/vestido-alca-bordado2.jpg',
+                    './img/feminino/vestido-alca-bordado3.jpg',
+                    './img/feminino/vestido-alca-bordado4.jpg',
+                    './img/feminino/vestido-alca-bordado5.jpg',
+                    './img/feminino/vestido-alca-bordado6.jpg',
+                    './img/feminino/vestido-alca-bordado7.jpg',
+                    './img/feminino/vestido-alca-bordado8.jpg',
+                ],
+                thumbnail: './img/feminino/vestido-alca-bordado.jpg',
+                price: '139,90',
+            },
+            {
+                id: 'fem096',
+                name: 'Vestido Vestido Carol',
+                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                images: [
+                    './img/feminino/vestido-carol.jpg',
+                    './img/feminino/vestido-carol2.jpg',
+                    './img/feminino/vestido-carol3.jpg',
+                    './img/feminino/vestido-carol4.jpg',
+                    './img/feminino/vestido-carol5.jpg'
+                ],
+                thumbnail: './img/feminino/vestido-carol.jpg',
+                price: '139,90',
+            },
+            {
+                id: 'fem095',
+                name: 'Vestido Laço Ombro Alça',
+                description: 'Tecido duna amassado com forro, tamanho único, veste até o 44, verificar cores disponíveis.',
+                images: [
+                    './img/feminino/vestido-laco-ombro-alca.jpg',
+                    './img/feminino/vestido-laco-ombro-alca2.jpg',
+                    './img/feminino/vestido-laco-ombro-alca3.jpg',
+                    './img/feminino/vestido-laco-ombro-alca4.jpg',
+                    './img/feminino/vestido-laco-ombro-alca5.jpg'
+                ],
+                thumbnail: './img/feminino/vestido-laco-ombro-alca.jpg',
+                price: '139,90',
+            },
             {
                 id: 'fem094',
                 name: 'Vestido Denise',
@@ -1105,6 +1291,16 @@ document.addEventListener('DOMContentLoaded', () => {
         feminino_plus: [ // NOVA COLEÇÃO MODA PLUS
             {
                 id: 'fplus017',
+                name: 'Vestido Casual Plus',
+                description: 'Tecido linho duna, com forro bolso e fenda, tamanho G e GG, consultar cores disponíveis.',
+                images: [
+                    './img/feminino/vestido-casual-plus.jpg',
+                ],
+                thumbnail: './img/feminino/vestido-casual-plus.jpg',
+                price: '159,90',
+            },
+            {
+                id: 'fplus017',
                 name: 'Vestido Nelly',
                 description: 'Tecido linho duna, com forro bolso e fenda, tamanho G e GG, consultar cores disponíveis.',
                 images: [
@@ -1398,7 +1594,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Esconde todas as seções
         categorySection.classList.remove('active-section');
         productCatalogSection.classList.remove('active-section');
-        subcategorySection.classList.remove('active-section');
 
         // Mostra a seção desejada
         sectionToShow.classList.add('active-section');
@@ -1415,8 +1610,15 @@ document.addEventListener('DOMContentLoaded', () => {
         productGridContainer.innerHTML = ''; // Limpa produtos anteriores
         currentProducts = productsData[categoryKey] || [];
 
-        const categoryName = categoryKey.charAt(0).toUpperCase() + categoryKey.slice(1);
-        catalogTitle.textContent = `Coleção ${categoryName}`;
+        // Mapeia as chaves para nomes amigáveis
+        const categoryNames = {
+            'feminino_vestidos': 'Vestidos',
+            'feminino_conjuntos': 'Conjuntos',
+            'feminino_plus': 'Feminino Plus'
+        };
+        
+        const categoryName = categoryNames[categoryKey] || categoryKey.charAt(0).toUpperCase() + categoryKey.slice(1);
+        catalogTitle.textContent = categoryName;
 
         if (currentProducts.length === 0) {
             productGridContainer.innerHTML = '<p class="no-products">Oops! Nenhum produto encontrado nesta coleção no momento.</p>';
@@ -1445,21 +1647,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <div class="product-info">
                     <h4>${product.name}</h4>
-                    <div class="product-rating">
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                    </div>
                     <div class="product-price">R$ ${product.price}</div>
-                    <div class="product-availability">✓ Disponível</div>
                 </div>
             `;
-            // Adiciona a classe de animação com um pequeno delay para efeito cascata
-            setTimeout(() => {
-                productCard.classList.add('fade-in');
-            }, index * 100); // Delay de 100ms entre cada card
 
             productCard.addEventListener('click', () => openProductModal(product.id));
             productGridContainer.appendChild(productCard);
@@ -1539,29 +1729,14 @@ document.addEventListener('DOMContentLoaded', () => {
         card.addEventListener('click', () => {
             const categoryKey = card.dataset.category;
 
-            if (categoryKey === 'feminino') {
-                // Mostra subcategorias para moda feminina
-                showSection(subcategorySection);
-            } else if (productsData[categoryKey]) {
-                // Mostra diretamente os produtos para outras categorias
+            if (productsData[categoryKey]) {
+                // Mostra diretamente os produtos
                 displayProducts(categoryKey);
                 showSection(productCatalogSection);
             } else {
                 alert('Coleção não encontrada ou indisponível no momento.');
             }
         });
-    });
-
-    subcategoryCards.forEach(card => {
-        card.addEventListener('click', () => {
-            const subcategoryKey = card.dataset.subcategory;
-            displayProducts(subcategoryKey);
-            showSection(productCatalogSection);
-        });
-    });
-
-    backToMainCategoriesButton.addEventListener('click', () => {
-        showSection(categorySection);
     });
 
     // Event listener para o botão "Voltar às Coleções"
@@ -1588,46 +1763,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Inicia a página mostrando a seção de categorias
     showSection(categorySection);
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const carouselTrack = document.querySelector('.carousel-track');
-    const slides = document.querySelectorAll('.carousel-slide');
-
-    // Duplica os slides para efeito infinito contínuo
-    function duplicateSlides() {
-        const slidesArray = Array.from(slides);
-        const firstFourSlides = slidesArray.slice(0, 4);
-
-        firstFourSlides.forEach(slide => {
-            const clone = slide.cloneNode(true);
-            carouselTrack.appendChild(clone);
-        });
-    }
-
-    // Verifica se precisa duplicar (caso o JavaScript esteja ativo)
-    if (slides.length < 8) {
-        duplicateSlides();
-    }
-
-    // Pausa animação no hover
-    carouselTrack.addEventListener('mouseenter', () => {
-        carouselTrack.style.animationPlayState = 'paused';
-    });
-
-    carouselTrack.addEventListener('mouseleave', () => {
-        carouselTrack.style.animationPlayState = 'running';
-    });
-
-    // Efeito de interação com os slides
-    const allSlides = document.querySelectorAll('.carousel-slide');
-    allSlides.forEach(slide => {
-        slide.addEventListener('mouseenter', () => {
-            slide.querySelector('.carousel-text').style.transform = 'scale(1.05)';
-        });
-
-        slide.addEventListener('mouseleave', () => {
-            slide.querySelector('.carousel-text').style.transform = 'scale(1)';
-        });
-    });
 });
